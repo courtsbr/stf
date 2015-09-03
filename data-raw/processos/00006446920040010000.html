@@ -1,0 +1,1429 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" href="/portal/util/imagem/icone/favicon.ico" >
+    <title>
+    Acompanhamento Processual :: STF - Supremo Tribunal Federal
+    </title>
+    <link href="/portal/util/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/impressao.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_table.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_page.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/themes/stf/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="/portal/util/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.dataTables.min.js"></script>     
+    <script type="text/javascript" src="/portal/util/js/jquery.maskedinput-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.maskMoney.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.js"></script>   
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.extra.js"></script>      
+    <script type="text/javascript" src="/portal/util/js/menu.js"></script>    
+    <script type="text/javascript" src="/portal/util/js/util.js"></script>
+    <script type="text/javascript" src="/portal/util/js/ajax.js"></script>
+    <script type="text/javascript" src="./js/verProcessoAndamento.js"></script>
+
+
+
+<!--<link href="/portal/util/conf/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/conf/css/rybena.css" rel="stylesheet" type="text/css" />
+    <<script src="/portal/util/conf/js/jquery.min.js"></script>
+    <script src="/portal/util/conf/js/jquery-ui.min.js"></script>
+    <script src="/portal/util/conf/js/rybena.js"></script>
+	<!--
+	<script> 
+      var $j = jQuery.noConflict();
+      $j(document).ready(function() {
+          $j("#libras").draggable();
+          $j("#voz").draggable();
+      });
+    </script>      -->
+
+    
+    
+	
+	
+    
+</head>
+
+<body>
+	<div id="pagina">
+    
+    	<div style="position:absolute;">
+        	<img src="/portal/util/imagem/header/mascara.gif" alt="link para p&aacute;gina principal" width="482px" height="80px" usemap="#Map" border="0"/>
+            <map name="Map" id="Map">
+            <area shape="rect" coords="4,3,489,83" href="http://www.stf.jus.br/portal/principal/principal.asp" alt="link para p&aacute;gina principal"/>
+            </map>
+			<map name="Map2" id="Map2" style="display:none;">
+				<a href="http://www.stf.jus.br/portal/principal/principal.asp">Página principal</a>
+			</map>
+      	</div>
+    
+<div id='headerdia1'><div style='height:20px;position:absolute;right:283px;top:60px;color:#fff'>      
+		<div id="divNaoImprimir">
+	            Bras&iacute;lia, 2 de setembro de 2015 - 15:12
+        </div>
+</div>
+          
+			<div id="menuBotao">
+				<ul>
+					<li id="botaoEspacoServidor" style="margin-left: 187px; font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="https://servidor.stf.jus.br/">Espaço do Servidor</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEnglish" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=en_us">ENGLISH</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEspanol" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/">ESPAÑOL</a>
+					</li>
+					<li id="botaoMapaSite" style="padding-left:301px;margin-top:3px;">
+						<a href="/portal/mapaSite/">Mapa do Portal</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="infoLogin">                
+				<form name="pesquisaPortalPrincipal" id="pesquisaPortalPrincipal" method="GET" action="../pesquisa/listarPesquisa.asp" style="padding-left:7px;">
+                    
+					<label id="labelTermo" for="termo" style="display:none;">termo</label>                     
+                    <input type="text" name="termo" id="termo" value="" maxlength="30" style="width: 150px; " />
+                    <input type="button" value=" " onclick="document.pesquisaPortalPrincipal.submit();" title="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" alt="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" id="btExecutarPesquisa" style="background:url(../util/imagem/botao/botaoPesquisar.gif) top no-repeat;border:0; width:70px; height:18px; cursor:pointer;"  />
+                </form>
+                <div id="naoCompletaPesquisa" style="padding-left:10px; font-size:11px; color:red; display:none;">Informe o termo</div>                        
+                
+			</div>
+			<div id="menuPrincipalConteiner">
+			<div id="menuPrincipal">
+				<ul>
+					<li id="principalPrincipal">
+						<a href="/portal/principal/">Principal</a>
+					</li>
+					<li id="principalSobreStf">
+						<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Sobre o STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Conheça o STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfComposicaoComposicaoPlenariaApresentacao">Composição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfAcervoArquivo">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=pt_br">Internacional</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfLinkJuridico">Links</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfEstudoSci">Estudos SCI</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfOrganograma">Organograma do STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConcursoPublico">Concursos Públicos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=curriculoMagistrados&pagina=inscritosCnj">Currículo de Magistrados</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalEstatistica">
+						<a href="/portal/cms/verTexto.asp?servico=estatistica">Estatísticas do STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=acervoinicio">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=decisoesinicio">Decisões</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pautainicio">Pauta do Plenário</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=competenciarecursal">Competência Recursal</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=entendainicio">Glossario/entenda</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=movimentoProcessual">Movimento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaClasse">Pesquisa por Classe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=processoCompetenciaPresidente">Proc. Competência Presidência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=adi">Controle Concentrado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=REAIProcessoDistribuido">RE, AI e ARE - % Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=hc">HC</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaRamoDireito">Pesquisa por Ramo do Direito</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalProcesso">
+						<a href="/portal/processo/">Processos</a>
+						<ul>
+							<span>
+								<a href="/portal/processo/">Acompanhamento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/pauta/">Pautas de Julgamento</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/audienciaPublica/">Audiências Públicas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/certidao">Pedido de Certidão</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalJurisprudencia">
+						<a href="/portal/jurisprudencia/">Jurisprudência</a>
+						<ul>
+							<span>
+								<a href="/portal/jurisprudencia/">Pesquisa</a>
+							<br/></span>
+							<span>
+								<a href="/portal/inteiroTeor/">Inteiro Teor de Acórdãos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaRepositorioJurisprudencia">Repositórios de Jurisprudência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaPropostaSumulaVinculante">Proposta Súmula Vinculante</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumulaVinculante">Súmulas Vinculantes</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumula">Súmulas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudencia/pesquisarSumula.asp">Súmulas na Jurisprudência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudenciaRepercussao/listarRepercussaoGeral.asp">Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaOmissaoInconstitucional">Omissão Inconstitucional</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalPublicacao">
+						<a href="/portal/diarioJustica/">Publicações</a>
+						<ul>
+							<span>
+								<a href="javascript:void window.open('http://redir.stf.jus.br/livrariasupremo','livrariaStf');">Livraria do Supremo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/diarioJustica/">DJ/DJe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoLegislacaoAnotada">Legislação Anotada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/indiceRtj/">RTJ Eletrônica</a>
+							<br/></span>
+							<span>
+								<a href="/portal/informativo/">Informativo Semanal</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoInformativoTema">Informativo por Temas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoInformativoRG">Boletim Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoTematica">Publicações Temáticas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoInstitucionalAberturaAno">Publicações Institucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/ataDistribuicao/">Atas de Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/autenticacao/">Autenticação de Documentos</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalBiblioteca">
+						<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Biblioteca</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Consultas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/biblioteca/pesquisarBibliotecaDigital.asp">Biblioteca Digital</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaServicoEmprestimo">Serviços</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaSobreBibliotecaHistorico">Sobre a Biblioteca</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalNoticia">
+						<a href="/portal/cms/listarNoticiaUltima.asp">Imprensa</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/listarNoticiaUltima.asp">Notícias STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarCobertura.asp">Coberturas Especiais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaTvJustica">TV Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaRadioJustica">Rádio Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarImagem.asp">Banco de Imagens</a>
+							<br/></span>
+							<span>
+								<a href="/portal/agendaMinistro/">Agenda dos Ministros</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaArtigoDiscurso">Artigos e Discursos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaEntrevista">Entrevistas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/glossario/">Glossário Jurídico</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://www.youtube.com/stf','stfYouTube');">STF no YouTube</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://twitter.com/stf_oficial','stfTwitter');">STF no Twitter</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalLegislacao">
+						<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Legislação</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Planalto e Senado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/atoNormativo/">Atos Normativos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoTratadoExtradicaoTextual&pagina=IndiceTratadoExtradicao">Tratados de Extradição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoRegimentoInterno">Regimento Interno Atual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaRI">Regimentos Anteriores</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoConstituicao">Constituições</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaPec&pagina=principal">Emendas Constitucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoAtasSessoesAdministrativas&pagina=atasSessoesAdministrativas">Atas de Sessões Administrativas</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalAcessoInformacao">
+						<a href="/portal/cms/verTexto.asp?servico=centralDoCidadaoAcessoInformacao">Acesso à Informacao</a>
+					</li>
+				</ul>
+			</div>
+
+
+			</div>
+		</div>
+		<div id="conteiner">
+			<div id="breadcrumb">
+				<div id="navegacao">
+					<a href="/portal/processo/">Processos</a> &gt; Acompanhamento Processual
+				</div>
+                
+                
+                
+                <!-- codigo teste rybena   
+                <div id="barraRybena" style="position: absolute; left:520px; top:3px;">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26"  />
+                    <map name="rybenamap">
+                        <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." onclick="chamaLibras()"   style="cursor: pointer" />
+                        <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." onclick="chamaVoz()" style="cursor: pointer"/> 
+                    </map>
+                    <div id="libras" class="drag" style="visibility: hidden"></div> 
+                    <div id="voz" class="drag" style="visibility: hidden"></div> 
+                </div>            -->    
+                
+                <!--     
+                <div style="position:absolute; left:520px; top:3px;">
+                             
+                    <div id="Rybenadialog" title="RybenaPlayer"></div>
+                    <div id="Vozdialog" title="CPqD Voz"></div>
+                
+                    <div id="barra_rybena">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26" />
+                        <map name="rybenamap">
+                          <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." id="opener"  onmouseup="carregaRybena()" onclick="libras()"   style="cursor: pointer" />
+                          <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." id="openerVoz" onmouseup="carregaVoz()" onclick="voz()" style="cursor: pointer"/> 
+                        </map>
+                    </div>
+                </div>    
+                -->   
+                <!-- codigo teste rybena -->
+    
+               
+					<div style="float:right; padding-top:4px;">
+					<form method="post" action="" name="interface">
+					<div id="acessoRapido">
+						<label id="labelFavoritos" for="acesso" style="display:none;">Favoritos</label>
+						<select id="acesso" name="acesso" onchange="linkAcesso()">
+                            <option value="0" selected>Favoritos:</option>
+							<option value="0">------------------------------------------</option>
+
+							<option value="../acessoRapido/">Configurar acesso r&aacute;pido...</option>
+						</select>
+					</div>
+				</form>
+				</div>
+				<div id="tamanho" style="margin-right:197px;">
+					<span>Tamanho</span>
+					<ul>
+						<li id="tamanhoDiminuir"><a href="#" onclick="sysAlterarTamanhoFonte('-'); return false;">Diminuir Fonte</a></li>
+						<li id="tamanhoAumentar"><a href="#" onclick="sysAlterarTamanhoFonte('+'); return false;">Aumentar Fonte</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="corpo">
+                <div id="menu">
+                    <h2>Processos</h2>
+                    <ul>
+						<li class="ativo">
+						<a href="/portal/processo/">Acompanhamento Processual</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=Informacoes_gerais_apos_desligamento_v1" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoRequisitoAcesso" style="">Requisitos de Acesso</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=principal" style="">Sobre o Pet V2</a>
+        </li>
+        <li class="">
+            <a href="http://www.stf.jus.br/portal/processo/redirecionamentoPeticaoEletronica.asp?versao=v2" style="">Acessar o e-STF v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoManualeSTF&pagina=Videos_Tutoriais_do_Peticionamento_Eletronico" style="">Vídeos Tutoriais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoFAQV2&pagina=faqv2" style="">FAQ Pet v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoResolucao" style="">Resoluções</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronicaPlantao" style="">Plantão Judicial</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComoIntegrar" style="">Como se integrar ao STF</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoTribunalAssociado" style="">Tribunais Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoOrgaoAssociado" style="">Órgãos Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComunicado" style="">Comunicados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoRecebimento" style="">Recebimento de processos</a>
+        </li>
+        <li class="">
+            <a href="/portal/origem/consultarProcessoDevolvido.asp" style="">Consulta de Avisos</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoTecnica" style="">Informações Técnicas</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoContato" style="">Contatos</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>						</li>
+						<li class="">
+						<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>						</li>
+						<li class="">
+						<a href="/portal/pauta/">Pautas de Julgamento</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=custaProcessual" style="">Tabela de Custas</a>
+        </li>
+        <li class="">
+            <a href="/portal/recolhimentoDeCustas/" style="">Emitir GRU</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/audienciaPublica/">Audiências Públicas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>						</li>
+						<li class="">
+						<a href="/portal/certidao">Pedido de Certidão</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>						</li>
+					</ul>
+<div class='sysBloco' style='margin-top:10PX;'></div>				</div>
+
+				<div class="conteudo">
+					<div id="barraTitulo">
+Acompanhamento Processual
+						<a href="#" id="imprimir" onclick="sysImprimir(); return false;">Imprimir</a>
+
+				    </div>
+<style>span.andamentoIndevido, tr.andamentoIndevido td, tr.andamentoIndevido td a { text-decoration: line-through; }</style><input type='hidden' id='numeroIncidente' value='2205887' /><div id='divPush' style='height:15px;color:red;text-align:right;font-size:10px;margin-bottom: 6px;padding: 7px;background: #DFE8ED;'>
+				<a href="../push/autenticarUsuario.asp?incluirProcesso=S"><img src="./imagem/bt_adiciona_push.jpg" alt="Incluir processo ao push" title="Incluir processo ao push" style="vertical-align:middle"></a>
+			</div><div  id='carregarAjax'></div><div id='divImpressaoProcessos'><div id="detalheProcesso">
+<h3><strong>ADI&nbsp;3154 - AÇÃO DIRETA DE INCONSTITUCIONALIDADE</strong>
+                             <span style="color:#066194;">(Processo físico)</span><br></h3><a style="text-decoration:none;" href=" http://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=2205887" title="Nos processos físicos, nem todas as peças poderão estar disponíveis" target="_blank"><span style="color: red; font-weight: bold; font-size: 9pt;">[Ver peças eletrônicas]</span></a><table width="100%" class="comum">
+<tr>
+<td>Origem:</td>
+<td><strong>SP - SÃO PAULO</strong></td>
+</tr>
+<tr>
+<td>Relator:</td>
+<td><strong>MIN. DIAS TOFFOLI</strong></td>
+</tr>
+<tr>
+<td>REQTE.(S)</td>
+<td><strong>CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>MARCUS VINICIUS FURTADO COÊLHO E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>RAFAEL BARBOSA DE CASTILHO </strong></td>
+</tr>
+<tr>
+<td>INTDO.(A/S)</td>
+<td><strong>GOVERNADOR DO ESTADO DE SÃO PAULO </strong></td>
+</tr>
+<tr>
+<td>INTDO.(A/S)</td>
+<td><strong>ASSEMBLÉIA LEGISLATIVA DO ESTADO DE SÃO PAULO </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>YURI CARAJELESCOV </strong></td>
+</tr>
+<tr>
+<td>INTDO.(A/S)</td>
+<td><strong>INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>ALUIZO SILVA DE LUCENA </strong></td>
+</tr>
+<tr>
+<td>INTDO.(A/S)</td>
+<td><strong>INSTITUTO DE DEFESA DO DIREITO DE DEFESA - IDDD </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>FLÁVIA RAHAL </strong></td>
+</tr>
+<tr>
+</tr>
+</table>
+</div>
+<div class="abasAcompanhamento">
+<ul class="abas">
+<li><a href="#" class="ativo">Andamentos</a></li>
+<li><a href="../diarioJustica/listarDiarioJustica.asp?tipoPesquisaDJ=AP&amp;numero=3154&amp;classe=ADI">
+                            DJ/DJe</a></li>
+<li><a href="../jurisprudencia/listarConsolidada.asp?classe=ADI&amp;numero=3154&amp;origem=AP">
+                            Jurisprudência</a></li>
+<li><a href="verProcessoDeslocamento.asp?incidente=2205887">
+                            Deslocamentos</a></li>
+<li><a href="verProcessoDetalhe.asp?incidente=2205887">
+                            Detalhes</a></li>
+<li><a href="verProcessoPeticao.asp?incidente=2205887">
+                            Petições</a></li>
+<li><a href="../peticaoInicial/verPeticaoInicial.asp?base=ADIN&amp;s1=3154&amp;processo=3154">
+                                Petição Inicial</a></li>
+<li class="ultima"><a href="verProcessoRecurso.asp?incidente=2205887">
+                            Recursos</a></li>
+</ul>
+<table class="resultadoAndamentoProcesso">
+<caption class="hide">
+                                Resultados da busca
+                                </caption>
+<tr>
+<th scope="col" width="70" align="center">Data</th>
+<th scope="col" align="center">Andamento</th>
+<th scope="col" width="64" align="center">Órgão Julgador</th>
+<th scope="col" align="center">Observação</th>
+<th scope="col" width="80" align="center">Documento</th>
+</tr>
+<tr>
+<td><span>12/08/2015</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>ao Gabinete da Exma. Sra. Ministra Cármen Lúcia, em decorrência do pedido de vista (com 3 volumes e 1 juntada por linha).</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico que retifiquei a autuação destes autos para constar o advogado Marcus Vinícius Furtado Côelho como representante do requerente.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 34007/2015.34007/2015 - Conselho Federal da Ordem dos Advogados do Brasil encaminha documentos e indica nome para futuras publicações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/07/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/07/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Procuração/Substabelecimento - Petição: 34007 Data: 06/07/2015 17:28:29.559 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/02/2013</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos ao Gabinete da Ministra Cármen Lúcia em razão do pedido de vista, com 3 volumes e 1 juntada por linha.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/02/2013</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 60773/2009.60773/2009 - IDDD - Instituto Brasileiro de Defesa do Direito de Defesa, requerendo anulação do feito, determinando-se nova e regular inclusão em pauta. Solicita também que seja intimado quando o feito for devolvido para continuidade do julgamento iniciado, para que o IDDD possa exercer o direito de sustentação oral.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/04/2012</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos ao Gabinete da Senhora Ministra Cármen Lúcia.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/04/2012</span> </td>
+<td><span>Substituição do Relator, art. 38 do RISTF</span> </td>
+<td><span></span> </td>
+<td><span>MIN. DIAS TOFFOLI</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/05/2009</span> </td>
+<td><span>Decisão de julgamento (Lei 9.868/99) publicada no DJE e no DOU</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/05/2009</span> </td>
+<td><span>Decisão publicada, DJE</span> </td>
+<td><span></span> </td>
+<td><span>ATA Nº 15, de 14/05/2009.  DJE nº 97, divulgado em 26/05/2009</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/05/2009</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 60773/2009, do Instituto de Defesa do Direito de Defesa - IDDD, requerendo anulação do feito, determinando-se nova e regular inclusão em pauta. Solicita também que seja intimado quando o feito for devolvido para continuidade do julgamento iniciado, para que o IDDD possa exercer o direito de sustentação oral. Ao Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/05/2009</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>Certidão de julgamento da sessão plenária de 14/5/2009. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/05/2009</span> </td>
+<td><span>Vista ao(à) Ministro(a)</span> </td>
+<td><span></span> </td>
+<td><span>CÁRMEN LÚCIA. Decisão: Após o voto do Senhor Ministro Menezes Direito (Relator), que afastava as argüições de inconstitucionalidade do art. 4º, caput, incisos I, II e III, com base na primeira fundamentação da inicial, bem como do § 1º do mesmo art. 4º da Lei 11.608, de 29 de dezembro de 2003, do Estado de São Paulo, o julgamento foi suspenso pelo pedido de vista da Senhora Ministra Cármen Lúcia. Quanto às demais normas, a ação foi julgada improcedente, conforme discriminação de cada dispositivo: 1) - art. 2º, parágrafo único, incisos II, III e IX, art. 3º e art. 4º, § 4º, contra o voto do Senhor Ministro Marco Aurélio; 2) - art. 4º, inciso II, contra os votos dos Senhores Ministros Carlos Britto e Marco Aurélio; 3) - art. 4º, § 2º, contra os votos dos Senhores Ministros Marco Aurélio, Cármen Lúcia e Carlos Britto; 4) - art. 4º, §§ 3º, 5º, 10 e 11, contra os votos dos Senhores Ministros Marco Aurélio e Carlos Britto; 5º) - art. 4º, § 7º, contra os votos dos Senhores Ministros Marco Aurélio, Carlo</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/02/2009</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/02/2009</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 14651/2009, do Nelson Buganza Junior, requerendo vista dos autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/02/2009</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>EM 16/2/2009.Petição 14651/2009.Junte-se.. Indefiro o pedido considerando que a presente ação já está liberada para a pauta de julgamento do Plenário.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/02/2009</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>EM 16/2/2009.Petição 14651/2009.Junte-se.. Indefiro o pedido considerando que a presente ação já está liberada para a pauta de julgamento do Plenário.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/02/2009</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 14651/2009, do Nelson Buganza Junior, requerendo vista dos autos. Ao Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/12/2008</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 24/11/2008 (DJE nº 237/2008, divulgado em 12/12/2008).</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=2516325&amp;tipoApp=RTF"><span>Despacho</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/12/2008</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/12/2008</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 123664/2008, do Instituto de Defesa do Direito de Defesa, requerendo seu ingresso na qualidade de "amicus curiae".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/12/2008</span> </td>
+<td><span>Deferido</span> </td>
+<td><span>MIN. MENEZES DIREITO</span> </td>
+<td><span>Em 24.11.2008: " (...)No mais, o peticionário demonstra a sua representatividade e a pertinência de seu objeto social com a questão discutida nos autos, que diz com o acesso ao Poder Judiciário.Ante o exposto, admito o ingresso do amicus curiae.Reautue-se com o peticionário.Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/12/2008</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - INSS</span> </td>
+<td><span></span> </td>
+<td><span>Pauta 47/2008 - Pleno</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/12/2008</span> </td>
+<td><span>Pauta publicada no DJE - Plenário</span> </td>
+<td><span></span> </td>
+<td><span>PAUTA Nº 47/2008 -  DJE nº 231, divulgado em 03/12/2008</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/12/2008</span> </td>
+<td><span>Intimação do INSS</span> </td>
+<td><span></span> </td>
+<td><span>Ref. a pauta nº  47 , do(a) Pleno.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/11/2008</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 166861/2008, do Conselho Federal da Ordem dos Advogados do Brasil, requerendo juntada de procuração e indicação de nomes para futuras publicações e intimações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/11/2008</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>166861/2008, de 26/11/2008 - CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL - REQUER JUNTADA DE PROCURAÇÃO E INDICA NOME PARA PUBLICAÇÕES E INTIMAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/11/2008</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/11/2008</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 52856/2008, da Assembléia Legislativa do Estado de São Paulo, indicando nome para as futuras intimações. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/11/2008</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 22/4/2008, no PG nº 52856/08: "Junte-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/11/2008</span> </td>
+<td><span>Inclua-se em pauta - minuta extraída</span> </td>
+<td><span></span> </td>
+<td><span>Pleno Em 24/11/2008 14:49:12</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/09/2008</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 123664/2008, do Instituto de Defesa do Direito de Defesa, requerendo sua admissão no feito na qualidade de "amicus curiae". Ao Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/04/2008</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 52856/2008, da Assembléia Legislativa do Estado de São Paulo, indicando nome para as futuras intimações. Ao Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/09/2007</span> </td>
+<td><span>SUBSTITUIÇÃO DO RELATOR - ART. 38 IV, A RISTF</span> </td>
+<td><span></span> </td>
+<td><span>MIN. MENEZES DIREITO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/05/2007</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/05/2007</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 56155/07 DO CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL, REQUERENDO PREFERÊNCIA NO JULGAMENTO DA PRESENTE AÇÃO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/05/2007</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>NO PG Nº 56155/2007. "JUNTE-SE"</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/04/2007</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 56155/07 DO CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL, REQUERENDO PREFERÊNCIA NO JULGAMENTO DA PRESENTE AÇÃO. AO MINISTRO RELATOR, SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/05/2006</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/05/2006</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 64052/06, DO INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS, APRESENTANDO MEMORIAL.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/05/2006</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 18/05/06 NO PG Nº 64052/06: "JUNTE-SE. CONCLUSOS."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/04/2006</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/04/2006</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 45697/06, DO INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS, REQUERENDO O SEU INGRESSO NO FEITO NA QUALIDADE DE "AMICUS CURIAE"</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/04/2006</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>NO PG Nº. 45697/06: JUNTE-SE. DEFIRO O PEDIDO DE INGRESSO NO FEITO COMO "AMICUS CURIAE".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/04/2006</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 45697/06, DO INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS, REQUERENDO O SEU INGRESSO NO FEITO NA QUALIDADE DE "AMICUS CURIAE". AO GABINETE DO MINISTRO-RELATOR SEM OS AUTOS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/09/2004</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/09/2004</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG Nº 79062/04, DO CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL, REQUERENDO PREFÊRENCIA NO JULGAMENTO DA PRESENTE DEMANDA.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/09/2004</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 02/09/04 NO PG Nº 79062/2004 "JUNTE-SE."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/07/2004</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 79062/04, DO CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL, REQUERENDO PREFÊRENCIA NO JULGAMENTO DA PRESENTE DEMANDA. AO MINISTRO RELATOR, SEM OS AUTOS EM 02/08/04.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/06/2004</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/06/2004</span> </td>
+<td><span>RECEBIMENTO DOS AUTOS</span> </td>
+<td><span></span> </td>
+<td><span>DA PROCURADORIA GERAL DA REPÚBLICA, COM PARECER NO SENTIDO DA IMPROCEDÊNCIA DO PEDIDO DE DECLARAÇÃO DE INCONSTITUCIONALIDADE. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/05/2004</span> </td>
+<td><span>VISTA AO PROCURADOR-GERAL DA REPUBLICA</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/05/2004</span> </td>
+<td><span>RECEBIMENTO DOS AUTOS</span> </td>
+<td><span></span> </td>
+<td><span>DA ADVOCACIA GERAL DA UNIÃO, COM DEFESA (PG N.º 52193/04).</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/04/2004</span> </td>
+<td><span>VISTA AO ADVOGADO-GERAL DA UNIAO</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2004</span> </td>
+<td><span>JUNTADA POR LINHA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 37882/04, DO GOVERNADOR DO ESTADO DE SÃO PAULO, PRESTANDO AS INFORMAÇÕES. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2004</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>"JUNTE-SE POR LINHA"</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/04/2004</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 37882/04 DO GOVERNADOR DO ESTADO DE SÃO PAULO, PRESTANTO AS INFORMAÇÕES SOLICITADAS PELO OFÍCIO Nº 758/R. AO MINISTRO RELATOR, SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/04/2004</span> </td>
+<td><span>VISTA AO ADVOGADO-GERAL DA UNIAO</span> </td>
+<td><span></span> </td>
+<td><span>VER RESOLUÇÃO 286, DJ DE 25/03/2004</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/04/2004</span> </td>
+<td><span>VISTA AO ADV-GERAL E AO PROCURADOR-GERAL</span> </td>
+<td><span></span> </td>
+<td><span>POR CINCO DIAS. EM 31/03/2004</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/03/2004</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/03/2004</span> </td>
+<td><span>DECORRIDO O PRAZO</span> </td>
+<td><span></span> </td>
+<td><span>EM 24/03/04 SEM QUE FOSSEM PRESTADAS AS INFORMAÇÕES SOLICITADAS POR MEIO DO OFÍCIO N.º 758/R AO GOVERNADOR DO ESTADO DE SÃO PAULO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/03/2004</span> </td>
+<td><span>JUNTADA DE AVISO DE RECEBIMENTO</span> </td>
+<td><span></span> </td>
+<td><span>AR RA 78210730 5 BR RECEBIDO PELA ASSEMBLÉIA LEGISLATIVA DE SÃO PAULO EM 12.03.2004</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/03/2004</span> </td>
+<td><span>JUNTADA DE AVISO DE RECEBIMENTO</span> </td>
+<td><span></span> </td>
+<td><span>AR RA 78210724 3 BR RECEBIDO PELO GOVERNADOR DE SÃO PAULO EM 12.03.2004</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/03/2004</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG N.º31897/04 DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DE SÃO PAULO, PRESTANDO INFORMAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/03/2004</span> </td>
+<td><span>INFORMACOES RECEBIDAS, OFICIO NRO.:</span> </td>
+<td><span></span> </td>
+<td><span>757/R, PG N.º31897/04 DA ASSEMBLÉA LEGISLATIVA DO ESTADO DE SÃO PAULO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/03/2004</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 24625/04, DO CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL, REQUERENDO A JUNTADA DE CERTIDÃO. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/03/2004</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 12.03.04, NO PG Nº 24625/04  "JUNTE-SE."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/03/2004</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 24625/04 DO CONSELHO FEDERAL DA ORDEM DOS ADVOGADOS DO BRASIL REQUERENDO A JUNTADA DE CERTIDÃO. AO MINISTRO RELATOR, SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/03/2004</span> </td>
+<td><span>PEDIDO DE INFORMACOES AO GOVERNADOR</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO Nº 758/R, NO PRAZO DE 10 (DEZ) DIAS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/03/2004</span> </td>
+<td><span>PEDIDO DE INFORM. ASSEMBLEIA LEGISLATIVA</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO Nº 757/R, NO PRAZO DE 10 (DEZ) DIAS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/03/2004</span> </td>
+<td><span>REMESSA DOS AUTOS</span> </td>
+<td><span></span> </td>
+<td><span>À SEÇÃO CARTORÁRIA</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/03/2004</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 04/03/04 "APLICO AO CASO - DADA A RELEVÂNCIA SOCIAL DA QUESTÃO -  O ART.12 DA L.9868/99: LOGO SOLICITEM-SE INFORMAÇÕES DEFINITIVAS, EM 10 DIAS."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/03/2004</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/03/2004</span> </td>
+<td><span>DISTRIBUIDO</span> </td>
+<td><span></span> </td>
+<td><span>MIN. SEPÚLVEDA PERTENCE</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+</table>
+</div>
+</div><!-- 2205887 --><div id='chamaVerImpressao' style='visibility:hidden;'></div>
+				</div>
+			</div> 
+			
+			<div style="font-size: 6px;">&nbsp;</div>
+			
+      	<div id="rodape" style="padding-top: 5px; border-top: solid 1px silver;">
+      
+				Pra&ccedil;a dos Tr&ecirc;s Poderes - Bras&iacute;lia - DF - CEP 70175-900 Telefone: 55.61.3217.3000 | 
+					<a href="../cms/verTexto.asp?servico=sobreStfConhecaStfTelefoneUtil">Telefones &Uacute;teis</a> | 
+					<a href="/portal/push/">STF Push</a> | 
+					<a href="../RSS/" class="rss">Canais RSS</a>
+			</div>
+	
+		</div>
+
+
+
+	</div> 
+	
+	<iframe title="Quadro de auto ajuda" id="sysQuadroAutoAjuda" style="display: none; position: absolute; border: 0px; z-index: 98;"></iframe>
+    <noframes> Seu navegador n&atilde;o suporta frames. </noframes>
+	
+	<script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-9066701-4");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>   
+   
+
+</body>
+
+</html>
