@@ -1,0 +1,1561 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" href="/portal/util/imagem/icone/favicon.ico" >
+    <title>
+    Acompanhamento Processual :: STF - Supremo Tribunal Federal
+    </title>
+    <link href="/portal/util/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/impressao.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_table.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_page.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/themes/stf/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="/portal/util/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.dataTables.min.js"></script>     
+    <script type="text/javascript" src="/portal/util/js/jquery.maskedinput-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.maskMoney.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.js"></script>   
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.extra.js"></script>      
+    <script type="text/javascript" src="/portal/util/js/menu.js"></script>    
+    <script type="text/javascript" src="/portal/util/js/util.js"></script>
+    <script type="text/javascript" src="/portal/util/js/ajax.js"></script>
+    <script type="text/javascript" src="./js/verProcessoAndamento.js"></script>
+
+
+
+<!--<link href="/portal/util/conf/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/conf/css/rybena.css" rel="stylesheet" type="text/css" />
+    <<script src="/portal/util/conf/js/jquery.min.js"></script>
+    <script src="/portal/util/conf/js/jquery-ui.min.js"></script>
+    <script src="/portal/util/conf/js/rybena.js"></script>
+	<!--
+	<script> 
+      var $j = jQuery.noConflict();
+      $j(document).ready(function() {
+          $j("#libras").draggable();
+          $j("#voz").draggable();
+      });
+    </script>      -->
+
+    
+    
+	
+	
+    
+</head>
+
+<body>
+	<div id="pagina">
+    
+    	<div style="position:absolute;">
+        	<img src="/portal/util/imagem/header/mascara.gif" alt="link para p&aacute;gina principal" width="482px" height="80px" usemap="#Map" border="0"/>
+            <map name="Map" id="Map">
+            <area shape="rect" coords="4,3,489,83" href="http://www.stf.jus.br/portal/principal/principal.asp" alt="link para p&aacute;gina principal"/>
+            </map>
+			<map name="Map2" id="Map2" style="display:none;">
+				<a href="http://www.stf.jus.br/portal/principal/principal.asp">Página principal</a>
+			</map>
+      	</div>
+    
+<div id='headerdia1'><div style='height:20px;position:absolute;right:283px;top:60px;color:#fff'>      
+		<div id="divNaoImprimir">
+	            Bras&iacute;lia, 29 de dezembro de 2015 - 16:02
+        </div>
+</div>
+          
+			<div id="menuBotao">
+				<ul>
+					<li id="botaoEspacoServidor" style="margin-left: 187px; font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="https://servidor.stf.jus.br/">Espaço do Servidor</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEnglish" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=en_us">ENGLISH</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEspanol" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/">ESPAÑOL</a>
+					</li>
+					<li id="botaoMapaSite" style="padding-left:301px;margin-top:3px;">
+						<a href="/portal/mapaSite/">Mapa do Portal</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="infoLogin">                
+				<form name="pesquisaPortalPrincipal" id="pesquisaPortalPrincipal" method="GET" action="../pesquisa/listarPesquisa.asp" style="padding-left:7px;">
+                    
+					<label id="labelTermo" for="termo" style="display:none;">termo</label>                     
+                    <input type="text" name="termo" id="termo" value="" maxlength="30" style="width: 150px; " />
+                    <input type="button" value=" " onclick="document.pesquisaPortalPrincipal.submit();" title="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" alt="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" id="btExecutarPesquisa" style="background:url(../util/imagem/botao/botaoPesquisar.gif) top no-repeat;border:0; width:70px; height:18px; cursor:pointer;"  />
+                </form>
+                <div id="naoCompletaPesquisa" style="padding-left:10px; font-size:11px; color:red; display:none;">Informe o termo</div>                        
+                
+			</div>
+			<div id="menuPrincipalConteiner">
+			<div id="menuPrincipal">
+				<ul>
+					<li id="principalPrincipal">
+						<a href="/portal/principal/">Principal</a>
+					</li>
+					<li id="principalSobreStf">
+						<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Sobre o STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Conheça o STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfComposicaoComposicaoPlenariaApresentacao">Composição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfAcervoArquivo">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=pt_br">Internacional</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfLinkJuridico">Links</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfEstudoSci">Estudos SCI</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfOrganograma">Organograma do STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConcursoPublico">Concursos Públicos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=curriculoMagistrados&pagina=inscritosCnj">Currículo de Magistrados</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalEstatistica">
+						<a href="/portal/cms/verTexto.asp?servico=estatistica">Estatísticas do STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=acervoinicio">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=decisoesinicio">Decisões</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pautainicio">Pauta do Plenário</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=competenciarecursal">Competência Recursal</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=entendainicio">Glossario/entenda</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=movimentoProcessual">Movimento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaClasse">Pesquisa por Classe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=processoCompetenciaPresidente">Proc. Competência Presidência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=adi">Controle Concentrado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=REAIProcessoDistribuido">RE, AI e ARE - % Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=hc">HC</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaRamoDireito">Pesquisa por Ramo do Direito</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalProcesso">
+						<a href="/portal/processo/">Processos</a>
+						<ul>
+							<span>
+								<a href="/portal/processo/">Acompanhamento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/pauta/">Pautas de Julgamento</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/audienciaPublica/">Audiências Públicas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/certidao">Pedido de Certidão</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalJurisprudencia">
+						<a href="/portal/jurisprudencia/">Jurisprudência</a>
+						<ul>
+							<span>
+								<a href="/portal/jurisprudencia/">Pesquisa</a>
+							<br/></span>
+							<span>
+								<a href="/portal/inteiroTeor/">Inteiro Teor de Acórdãos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaRepositorioJurisprudencia">Repositórios de Jurisprudência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaPropostaSumulaVinculante">Proposta Súmula Vinculante</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumulaVinculante">Súmulas Vinculantes</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumula">Súmulas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudencia/pesquisarSumula.asp">Aplicação das Súmulas no STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudenciaRepercussao/listarRepercussaoGeral.asp">Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaOmissaoInconstitucional">Omissão Inconstitucional</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalPublicacao">
+						<a href="/portal/diarioJustica/">Publicações</a>
+						<ul>
+							<span>
+								<a href="javascript:void window.open('http://redir.stf.jus.br/livrariasupremo','livrariaStf');">Livraria do Supremo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/diarioJustica/">DJ/DJe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoLegislacaoAnotada">Legislação Anotada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/indiceRtj/">RTJ Eletrônica</a>
+							<br/></span>
+							<span>
+								<a href="/portal/informativo/">Informativo STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoInformativoRG">Boletim Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoTematica">Publicações Temáticas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoInstitucionalAberturaAno">Publicações Institucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/ataDistribuicao/">Atas de Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/autenticacao/">Autenticação de Documentos</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalBiblioteca">
+						<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Biblioteca</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Consultas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/biblioteca/pesquisarBibliotecaDigital.asp">Biblioteca Digital</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaServicoEmprestimo">Serviços</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaSobreBibliotecaHistorico">Sobre a Biblioteca</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalNoticia">
+						<a href="/portal/cms/listarNoticiaUltima.asp">Imprensa</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/listarNoticiaUltima.asp">Notícias STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarCobertura.asp">Coberturas Especiais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaTvJustica">TV Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaRadioJustica">Rádio Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarImagem.asp">Banco de Imagens</a>
+							<br/></span>
+							<span>
+								<a href="/portal/agendaMinistro/">Agenda dos Ministros</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaArtigoDiscurso">Artigos e Discursos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaEntrevista">Entrevistas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/glossario/">Glossário Jurídico</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://www.youtube.com/stf','stfYouTube');">STF no YouTube</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://twitter.com/stf_oficial','stfTwitter');">STF no Twitter</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalLegislacao">
+						<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Legislação</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Planalto e Senado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/atoNormativo/">Atos Normativos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoTratadoExtradicaoTextual&pagina=IndiceTratadoExtradicao">Tratados de Extradição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoRegimentoInterno">Regimento Interno Atual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaRI">Regimentos Anteriores</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoConstituicao">Constituições</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaPec&pagina=principal">Emendas Constitucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoAtasSessoesAdministrativas&pagina=atasSessoesAdministrativas">Atas de Sessões Administrativas</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalAcessoInformacao">
+						<a href="/portal/cms/verTexto.asp?servico=centralDoCidadaoAcessoInformacao">Acesso à Informacao</a>
+					</li>
+				</ul>
+			</div>
+
+
+			</div>
+		</div>
+		<div id="conteiner">
+			<div id="breadcrumb">
+				<div id="navegacao">
+					<a href="/portal/processo/">Processos</a> &gt; Acompanhamento Processual
+				</div>
+                
+                
+                
+                <!-- codigo teste rybena   
+                <div id="barraRybena" style="position: absolute; left:520px; top:3px;">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26"  />
+                    <map name="rybenamap">
+                        <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." onclick="chamaLibras()"   style="cursor: pointer" />
+                        <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." onclick="chamaVoz()" style="cursor: pointer"/> 
+                    </map>
+                    <div id="libras" class="drag" style="visibility: hidden"></div> 
+                    <div id="voz" class="drag" style="visibility: hidden"></div> 
+                </div>            -->    
+                
+                <!--     
+                <div style="position:absolute; left:520px; top:3px;">
+                             
+                    <div id="Rybenadialog" title="RybenaPlayer"></div>
+                    <div id="Vozdialog" title="CPqD Voz"></div>
+                
+                    <div id="barra_rybena">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26" />
+                        <map name="rybenamap">
+                          <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." id="opener"  onmouseup="carregaRybena()" onclick="libras()"   style="cursor: pointer" />
+                          <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." id="openerVoz" onmouseup="carregaVoz()" onclick="voz()" style="cursor: pointer"/> 
+                        </map>
+                    </div>
+                </div>    
+                -->   
+                <!-- codigo teste rybena -->
+    
+               
+					<div style="float:right; padding-top:4px;">
+					<form method="post" action="" name="interface">
+					<div id="acessoRapido">
+						<label id="labelFavoritos" for="acesso" style="display:none;">Favoritos</label>
+						<select id="acesso" name="acesso" onchange="linkAcesso()">
+                            <option value="0" selected>Favoritos:</option>
+							<option value="0">------------------------------------------</option>
+
+							<option value="../acessoRapido/">Configurar acesso r&aacute;pido...</option>
+						</select>
+					</div>
+				</form>
+				</div>
+				<div id="tamanho" style="margin-right:197px;">
+					<span>Tamanho</span>
+					<ul>
+						<li id="tamanhoDiminuir"><a href="#" onclick="sysAlterarTamanhoFonte('-'); return false;">Diminuir Fonte</a></li>
+						<li id="tamanhoAumentar"><a href="#" onclick="sysAlterarTamanhoFonte('+'); return false;">Aumentar Fonte</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="corpo">
+                <div id="menu">
+                    <h2>Processos</h2>
+                    <ul>
+						<li class="ativo">
+						<a href="/portal/processo/">Acompanhamento Processual</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=Informacoes_gerais_apos_desligamento_v1" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoRequisitoAcesso" style="">Requisitos de Acesso</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=principal" style="">Sobre o Pet V2</a>
+        </li>
+        <li class="">
+            <a href="http://www.stf.jus.br/portal/processo/redirecionamentoPeticaoEletronica.asp?versao=v2" style="">Acessar o e-STF v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoManualeSTF&pagina=Videos_Tutoriais_do_Peticionamento_Eletronico" style="">Vídeos Tutoriais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoFAQV2&pagina=faqv2" style="">FAQ Pet v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoResolucao" style="">Resoluções</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronicaPlantao" style="">Plantão Judicial</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComoIntegrar" style="">Como se integrar ao STF</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoTribunalAssociado" style="">Tribunais Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoOrgaoAssociado" style="">Órgãos Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComunicado" style="">Comunicados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoRecebimento" style="">Recebimento de processos</a>
+        </li>
+        <li class="">
+            <a href="/portal/origem/consultarProcessoDevolvido.asp" style="">Consulta de Avisos</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoTecnica" style="">Informações Técnicas</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoContato" style="">Contatos</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>						</li>
+						<li class="">
+						<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>						</li>
+						<li class="">
+						<a href="/portal/pauta/">Pautas de Julgamento</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=custaProcessual" style="">Tabela de Custas</a>
+        </li>
+        <li class="">
+            <a href="/portal/recolhimentoDeCustas/" style="">Emitir GRU</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/audienciaPublica/">Audiências Públicas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>						</li>
+						<li class="">
+						<a href="/portal/certidao">Pedido de Certidão</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>						</li>
+					</ul>
+<div class='sysBloco' style='margin-top:10PX;'></div>				</div>
+
+				<div class="conteudo">
+					<div id="barraTitulo">
+Acompanhamento Processual
+						<a href="#" id="imprimir" onclick="sysImprimir(); return false;">Imprimir</a>
+
+				    </div>
+<style>span.andamentoIndevido, tr.andamentoIndevido td, tr.andamentoIndevido td a { text-decoration: line-through; }</style><input type='hidden' id='numeroIncidente' value='4157562' /><div id='divPush' style='height:15px;color:red;text-align:right;font-size:10px;margin-bottom: 6px;padding: 7px;background: #DFE8ED;'>
+				<a href="../push/autenticarUsuario.asp?incluirProcesso=S"><img src="./imagem/bt_adiciona_push.jpg" alt="Incluir processo ao push" title="Incluir processo ao push" style="vertical-align:middle"></a>
+			</div><div  id='carregarAjax'></div><div id='divImpressaoProcessos'><div id="detalheProcesso">
+<h3><strong>RE&nbsp;661256 - RECURSO EXTRAORDINÁRIO</strong>
+                             <span style="color:#F00;">(Eletrônico)</span><br></h3><a style="text-decoration:none;" href=" http://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=4157562" target="_blank"><span style="color: red; font-weight: bold; font-size: 9pt;">[Ver peças eletrônicas]</span></a><table width="100%" class="comum">
+<tr>
+<td>Origem:</td>
+<td><strong>SC - SANTA CATARINA</strong></td>
+</tr>
+<tr>
+<td style="width: 80px;">Relator atual:</td>
+<td><strong>MIN. ROBERTO BARROSO</strong></td>
+</tr>
+<tr>
+<td>RECTE.(S)</td>
+<td><strong>INSTITUTO NACIONAL DO SEGURO SOCIAL - INSS </strong></td>
+</tr>
+<tr>
+<td>PROC.(A/S)(ES)</td>
+<td><strong>PROCURADOR-GERAL FEDERAL </strong></td>
+</tr>
+<tr>
+<td>RECDO.(A/S)</td>
+<td><strong>VALDEMAR RONCAGLIO </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>ADILSON VIEIRA MACABU E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+<td>AM. CURIAE.</td>
+<td><strong>INSTITUTO BRASILEIRO DE DIREITO PREVIDENCIÁRIO- IBDP </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>GISELE LEMOS KRAVCHYCHYN E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+<td>AM. CURIAE.</td>
+<td><strong> UNIÃO </strong></td>
+</tr>
+<tr>
+<td>PROC.(A/S)(ES)</td>
+<td><strong>ADVOGADO-GERAL DA UNIAO </strong></td>
+</tr>
+<tr>
+<td>AM. CURIAE.</td>
+<td><strong>CONFEDERAÇÃO BRASILEIRA DE APOSENTADOS E PENSIONISTAS - COBAP </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>GABRIEL DORNELLES MARCOLIN </strong></td>
+</tr>
+<tr>
+</tr>
+</table>
+</div>
+<div class="abasAcompanhamento">
+<ul class="abas">
+<li><a href="#" class="ativo">Andamentos</a></li>
+<li><a href="../diarioJustica/listarDiarioJustica.asp?tipoPesquisaDJ=AP&amp;numero=661256&amp;classe=RE">
+                            DJ/DJe</a></li>
+<li><a href="../jurisprudencia/listarConsolidada.asp?classe=RE&amp;numero=661256&amp;origem=AP">
+                            Jurisprudência</a></li>
+<li><a href="verProcessoDeslocamento.asp?incidente=4157562">
+                            Deslocamentos</a></li>
+<li><a href="verProcessoDetalhe.asp?incidente=4157562">
+                            Detalhes</a></li>
+<li><a href="verProcessoPeticao.asp?incidente=4157562">
+                            Petições</a></li>
+<li class="ultima"><a href="verProcessoRecurso.asp?incidente=4157562">
+                            Recursos</a></li>
+</ul>
+<table class="resultadoAndamentoProcesso">
+<caption class="hide">
+                                Resultados da busca
+                                </caption>
+<tr>
+<th scope="col" width="70" align="center">Data</th>
+<th scope="col" align="center">Andamento</th>
+<th scope="col" width="64" align="center">Órgão Julgador</th>
+<th scope="col" align="center">Observação</th>
+<th scope="col" width="80" align="center">Documento</th>
+</tr>
+<tr>
+<td><span>18/12/2015</span> </td>
+<td><span>Vista - Devolução dos autos para julgamento</span> </td>
+<td><span>MIN. ROSA WEBER</span> </td>
+<td><span>18/12/2015 18:15:50 - </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/11/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Procuração/Substabelecimento - Petição: 60189 Data: 19/11/2015 13:35:01.88 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/11/2014</span> </td>
+<td><span>Ata de Julgamento Publicada, DJE</span> </td>
+<td><span></span> </td>
+<td><span>ATA Nº 31, de 29/10/2014.  DJE nº 224, divulgado em 13/11/2014</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/11/2014</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>Em 3/11/2014. Da certidão de julgamento da sessão plenária de 29/10/2014.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/10/2014</span> </td>
+<td><span>Vista ao(à) Ministro(a)</span> </td>
+<td><span>MIN. ROSA WEBER</span> </td>
+<td><span>Decisão: Após os votos dos Ministros Teori Zavascki e Dias Toffoli, que davam provimento integral ao recurso, pediu vista dos autos a Ministra Rosa Weber. Presidência do Ministro Ricardo Lewandowski. Plenário, 29.10.2014.</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3686738&amp;tipoApp=RTF"><span>Decisão de Julgamento</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/10/2014</span> </td>
+<td><span>Ata de Julgamento Publicada, DJE</span> </td>
+<td><span></span> </td>
+<td><span>ATA Nº 27, de 09/10/2014.  DJE nº 210, divulgado em 23/10/2014</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/10/2014</span> </td>
+<td><span>Ata de Julgamento Publicada, DJE</span> </td>
+<td><span></span> </td>
+<td><span>ATA Nº 28, de 08/10/2014.  DJE nº 209, divulgado em 22/10/2014</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/10/2014</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>da certidão referente às sessões do Plenário de 8 e 9.10.2014.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/10/2014</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/10/2014</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Informações - Petição: 47981 Data: 09/10/2014 20:23:23.118 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/10/2014</span> </td>
+<td><span>Suspenso o julgamento</span> </td>
+<td><span></span> </td>
+<td><span>Decisão: Após o voto do Ministro Roberto Barroso (Relator), dando parcial provimento ao recurso, o julgamento foi suspenso. Ausentes a Ministra Cármen Lúcia, representando o Tribunal na Viagem de Estudos sobre Justiça Transicional, organizada pela Fundação Konrad Adenauer, em Berlim, entre os dias 5 e 9 de outubro de 2014, e na 100ª Sessão Plenária da Comissão Europeia para a Democracia pelo Direito (Comissão de Veneza), em Roma, nos dias 10 e 11 subsequentes; o Ministro Dias Toffoli que, na qualidade de Presidente do Tribunal Superior Eleitoral, participa do VII Fórum da Democracia de Bali, na Indonésia, no período de 8 a 13 de outubro de 2014, e, justificadamente, o Ministro Teori Zavascki. Falaram, pelo recorrente Instituto Nacional do Seguro Social  INSS, o Dr. Marcelo de Siqueira Freitas, Procurador-Geral Federal; pelo amicus curiae Instituto Brasileiro de Direito Previdenciário  IBDP, a Dra. Gisele Kravchynchyn, e, pelo amicus curiae Confederação Brasileira de Aposentados e Pensionistas  COBAP, o Dr. Gabriel Dornelles Marcolin, OAB/RS 76.643. Presidência do Ministro Ricardo Lewandowski. Plenário, 09.10.2014.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/10/2014</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>09/10/2014 - Juntada
+Justificativa: indevido</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">09/10/2014</span> </td>
+<td><span class="andamentoIndevido">Juntada</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido">Decisão: Após o voto do Ministro Roberto Barroso (Relator), dando parcial provimento ao recurso, o julgamento foi suspenso. Ausentes a Ministra Cármen Lúcia, representando o Tribunal na Viagem de Estudos sobre Justiça Transicional, organizada pela Fundação Konrad Adenauer, em Berlim, entre os dias 5 e 9 de outubro de 2014, e na 100ª Sessão Plenária da Comissão Europeia para a Democracia pelo Direito (Comissão de Veneza), em Roma, nos dias 10 e 11 subsequentes; o Ministro Dias Toffoli que, na qualidade de Presidente do Tribunal Superior Eleitoral, participa do VII Fórum da Democracia de Bali, na Indonésia, no período de 8 a 13 de outubro de 2014, e, justificadamente, o Ministro Teori Zavascki. Falaram, pelo recorrente Instituto Nacional do Seguro Social - INSS, o Dr. Marcelo de Siqueira Freitas, Procurador-Geral Federal; pelo amicus curiae Instituto Brasileiro de Direito Previdenciário - IBDP, a Dra. Gisele Kravchychyn, e, pelo amicus curiae Confederação Brasileira de Aposentados e P</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/10/2014</span> </td>
+<td><span>Suspenso o julgamento</span> </td>
+<td><span></span> </td>
+<td><span>Decisão: Após o relatório, o julgamento foi suspenso. Ausentes a Ministra Cármen Lúcia, representando o Tribunal na Viagem de Estudos sobre Justiça Transicional, organizada pela Fundação Konrad Adenauer, em Berlim, entre os dias 5 e 9 de outubro de 2014, e na 100ª Sessão Plenária da Comissão Europeia para a Democracia pelo Direito (Comissão de Veneza), em Roma, nos dias 10 e 11 subsequentes, e o Ministro Dias Toffoli que, na qualidade de Presidente do Tribunal Superior Eleitoral, participa do VII Fórum da Democracia de Bali, na Indonésia, no período de 8 a 13 de outubro de 2014. Presidência do Ministro Ricardo Lewandowski. Plenário, 08.10.2014.</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3669768&amp;tipoApp=RTF"><span>Decisão de Julgamento</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/09/2014</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/09/2014</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - PGF</span> </td>
+<td><span></span> </td>
+<td><span> Da PGF, ref. ao despacho publicado no DJE de 15/09/2014.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/09/2014</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>(Em 16/09/2014) Da PGF, ref. ao despacho publicado no DJE de 15/09/2014</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/09/2014</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Reconsideração - Petição: 42742 Data: 16/09/2014 09:29:26.99 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/09/2014</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 178, divulgado em 12/09/2014</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=258930110&amp;tipoApp=.pdf"><span>Decisão monocrática</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/09/2014</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - AGU</span> </td>
+<td><span></span> </td>
+<td><span>UNIÃO/AGU - Referente à Pauta n. 42/2014 - Plenário. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/09/2014</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - PGF</span> </td>
+<td><span></span> </td>
+<td><span>PGF - Referente à Pauta n. 42/2014 - Plenário. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/09/2014</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>(Em 11/09/2014) Do Procurador - Geral Federal Ref à Pauta n° 42/2014 DJE 12/09/2014</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/09/2014</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>(Em 11/09/2014) Da União, Na. Pessoa Do AGU Ref à Pauta n° 42/2014 DJE 12/09/2014</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/09/2014</span> </td>
+<td><span>Pauta publicada no DJE - Plenário</span> </td>
+<td><span></span> </td>
+<td><span>PAUTA Nº 42/2014.  DJE nº 177, divulgado em 11/09/2014</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/09/2014</span> </td>
+<td><span>Indeferido</span> </td>
+<td><span>MIN. ROBERTO BARROSO</span> </td>
+<td><span>Levando em conta o critério da representatividade, indefiro o pedido do SINDNAP, bem como o da ANFIP. 
+
+</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/09/2014</span> </td>
+<td><span>Deferido</span> </td>
+<td><span>MIN. ROBERTO BARROSO</span> </td>
+<td><span>Tendo em vista a relevância da matéria e a representatividade da COBAP, já reconhecida no RE 626.489, defiro seu ingresso na qualidade de amicus curiae , nos termos do art. 543-A, § 6°, do Código de Processo Civil, c/c o art. 323, § 3°, do RIS/TF. Registro que a Confederação já apresentou manifestação escrita no feito. 
+
+</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/09/2014</span> </td>
+<td><span>Inclua-se em pauta - minuta extraída</span> </td>
+<td><span></span> </td>
+<td><span>Pleno em 09/09/2014 11:13:53</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/08/2014</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/08/2014</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Manifestação - Petição: 37924 Data: 26/08/2014 11:00:08.446 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2014</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2014</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Juntada de documentos - Petição: 15993 Data: 09/04/2014 11:05:20.242 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/04/2014</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/04/2014</span> </td>
+<td><span>Manifestação da PGR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=4270255&amp;tipoApp=.pdf"><span>Manifestação da PGR</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/03/2014</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Manifestação - Petição: 9101 Data: 07/03/2014 13:09:09.973 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/02/2014</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Manifestação - Petição: 3107 Data: 06/02/2014 11:27:53.273 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/01/2014</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>31/01/2014 - Conclusos ao(à) Relator(a)
+Justificativa: equívoco</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">31/01/2014</span> </td>
+<td><span class="andamentoIndevido">Conclusos ao(à) Relator(a)</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido"></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/12/2013</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - AGU</span> </td>
+<td><span></span> </td>
+<td><span>Da AGU, ref. ao despacho publicado no DJE de 19/11/2013.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/12/2013</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>(Em 17/12/2013)Do AGU, ref. ao despacho publicado no DJE de 19/11/2013</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/12/2013</span> </td>
+<td><span>Vista à PGR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/11/2013</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - PGF</span> </td>
+<td><span></span> </td>
+<td><span>Do PGF, ref. ao despacho publicado no DJE de 19/11/2013</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/11/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Amicus curiae - Petição: 60233 Data: 27/11/2013 15:36:14.20 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/11/2013</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>(Em 25/11/2013)Do PGF, ref. ao despacho publicado no DJE de 19/11/2013</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/11/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Manifestação - Petição: 60070 Data: 26/11/2013 18:46:51.637 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/11/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Amicus curiae - Petição: 59174 Data: 22/11/2013 10:37:15.452 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/11/2013</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - PGF</span> </td>
+<td><span></span> </td>
+<td><span>Da PGF, ref. ao despacho publicado no DJE de 13/11/2013</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/11/2013</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>(Em 18/11/2013) Da PGF, ref. ao despacho publicado no DJE de 13/11/2013</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/11/2013</span> </td>
+<td><span>Recebimento dos autos</span> </td>
+<td><span></span> </td>
+<td><span>do gabinete.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/11/2013</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/11/2013</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de ausência de manifestação por parte de Valdemar Roncaglio.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/11/2013</span> </td>
+<td><span>Republicado, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 227, divulgado em 18/11/2013</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=183220097&amp;tipoApp=.pdf"><span>Decisão monocrática</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/11/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Manifestação - Petição: 58368 Data: 18/11/2013 16:52:59.421 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/11/2013</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de retificação da autuação.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/11/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Amicus curiae - Petição: 57914 Data: 14/11/2013 14:35:30.551 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/11/2013</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 223, divulgado em 11/11/2013</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=183220097&amp;tipoApp=.pdf"><span>Decisão monocrática</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/11/2013</span> </td>
+<td><span>Deferido</span> </td>
+<td><span>MIN. ROBERTO BARROSO</span> </td>
+<td><span>intimem-se as partes e os amici curiae para apresentação de últimas alegações, no prazo comum de cinco dias. Em seguida, venham conclusos. 
+</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/08/2013</span> </td>
+<td><span>Substituição do Relator, art. 38 do RISTF</span> </td>
+<td><span></span> </td>
+<td><span>MIN. ROBERTO BARROSO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/08/2013</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>06/08/2013 - Substituição do Relator, art. 38 do RISTF</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/08/2013</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">06/08/2013</span> </td>
+<td><span class="andamentoIndevido">Substituição do Relator, art. 38 do RISTF</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido">MIN. TEORI ZAVASCKI</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/07/2013</span> </td>
+<td><span>Conclusos à Presidência</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/07/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Amicus curiae - Petição: 34662 Data: 24/07/2013 17:40:02.709 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/12/2012</span> </td>
+<td><span>Ata de Julgamento Publicada, DJE</span> </td>
+<td><span></span> </td>
+<td><span>ATA Nº 57, de 26/11/2012.  DJE nº 247, divulgado em 17/12/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/12/2012</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>Certidão de retirada de pauta da sessão plenária de 26/11/2012.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/11/2012</span> </td>
+<td><span>Retirado de pauta</span> </td>
+<td><span></span> </td>
+<td><span>NA SESSÃO DO PLENÁRIO DE 26.11.2012 - Decisão: Retirado de pauta em face da aposentadoria do Relator. Presidência do Senhor Ministro Joaquim Barbosa. Plenário, 26.11.2012.</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3255077&amp;tipoApp=RTF"><span>Decisão de Julgamento</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/04/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>22096/2012 - 30/04/2012 - (PETIÇÃ0O ELETRÔNICA COM CERTIFICAÇÃO DIGITAL) UNIÃO - REQUER INGRESSO COMO "AMICUS CURIAE".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/04/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/04/2012</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - PGF</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/04/2012</span> </td>
+<td><span>Juntada do mandado de intimação devidamente cumprido - PGF</span> </td>
+<td><span></span> </td>
+<td><span>Referente à Pauta n. 19/2012 - Plenário. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/04/2012</span> </td>
+<td><span>Pauta publicada no DJE - Plenário</span> </td>
+<td><span></span> </td>
+<td><span>PAUTA Nº 19/2012.  DJE nº 81, divulgado em 25/04/2012 (Processo republicado por constar incorreção na publicação do DJE de 23.4.2012)</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/04/2012</span> </td>
+<td><span>Publicado acórdão, DJE</span> </td>
+<td><span></span> </td>
+<td><span>DATA DE PUBLICAÇÃO DJE 26/04/2012 ATA Nº 15/2012 -  DJE nº 81, divulgado em 25/04/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/04/2012</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2012</span> </td>
+<td><span>Pauta publicada no DJE - Plenário</span> </td>
+<td><span></span> </td>
+<td><span>PAUTA Nº 18/2012.  DJE nº 78, divulgado em 20/04/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/04/2012</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>19/04/2012 - Substituição do Relator, art. 38 do RISTF</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">19/04/2012</span> </td>
+<td><span class="andamentoIndevido">Substituição do Relator, art. 38 do RISTF</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido">MIN. CEZAR PELUSO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/04/2012</span> </td>
+<td><span>Inclua-se em pauta - minuta extraída</span> </td>
+<td><span></span> </td>
+<td><span>Pleno em 19/04/2012 15:16:44</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/11/2011</span> </td>
+<td><span>Decisão pela existência de repercussão geral</span> </td>
+<td><span>PLENÁRIO VIRTUAL</span> </td>
+<td><span>Decisão: O Tribunal reconheceu a existência de repercussão geral da questão constitucional suscitada.  Não se manifestaram os Ministros Min. Gilmar Mendes e Min. Joaquim Barbosa. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/10/2011</span> </td>
+<td><span>Iniciada análise de repercussão geral</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/10/2011</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/10/2011</span> </td>
+<td><span>Cancelamento da distribuição</span> </td>
+<td><span></span> </td>
+<td><span>realizada em 19/10/2011 ao Min. Joaquim Barbosa, em cumprimento ao despacho de 26/10/2011.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/10/2011</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 25.10.2011: "À Secretaria, para que proceda ao cancelamento da segunda distribuição do RE nº 661.256, equivocadamente feita ao Min. JOAQUIM BARBOSA. Após, remetam-se os autos ao Relator, Min. AYRES BRITTO."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/10/2011</span> </td>
+<td><span>Conclusos à Presidência</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/10/2011</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>de informação da SEJ e STI.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/10/2011</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/10/2011</span> </td>
+<td><span>Distribuído</span> </td>
+<td><span></span> </td>
+<td><span>MIN. JOAQUIM BARBOSA</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/10/2011</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/10/2011</span> </td>
+<td><span>Distribuído</span> </td>
+<td><span></span> </td>
+<td><span>MIN. AYRES BRITTO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/10/2011</span> </td>
+<td><span>Autuado</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+</table>
+</div>
+</div><!-- 4157562 --><div id='chamaVerImpressao' style='visibility:hidden;'></div>
+				</div>
+			</div> 
+			
+			<div style="font-size: 6px;">&nbsp;</div>
+			
+      	<div id="rodape" style="padding-top: 5px; border-top: solid 1px silver;">
+      
+				Pra&ccedil;a dos Tr&ecirc;s Poderes - Bras&iacute;lia - DF - CEP 70175-900 Telefone: 55.61.3217.3000 | 
+					<a href="../cms/verTexto.asp?servico=sobreStfConhecaStfTelefoneUtil">Telefones &Uacute;teis</a> | 
+					<a href="/portal/push/">STF Push</a> | 
+					<a href="../RSS/" class="rss">Canais RSS</a>
+			</div>
+	
+		</div>
+
+
+
+	</div> 
+	
+	<iframe title="Quadro de auto ajuda" id="sysQuadroAutoAjuda" style="display: none; position: absolute; border: 0px; z-index: 98;"></iframe>
+    <noframes> Seu navegador n&atilde;o suporta frames. </noframes>
+	
+	<script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-9066701-4");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>   
+   
+
+</body>
+
+</html>

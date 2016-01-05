@@ -1,0 +1,1284 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" href="/portal/util/imagem/icone/favicon.ico" >
+    <title>
+    Acompanhamento Processual :: STF - Supremo Tribunal Federal
+    </title>
+    <link href="/portal/util/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/impressao.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_table.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_page.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/themes/stf/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="/portal/util/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.dataTables.min.js"></script>     
+    <script type="text/javascript" src="/portal/util/js/jquery.maskedinput-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.maskMoney.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.js"></script>   
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.extra.js"></script>      
+    <script type="text/javascript" src="/portal/util/js/menu.js"></script>    
+    <script type="text/javascript" src="/portal/util/js/util.js"></script>
+    <script type="text/javascript" src="/portal/util/js/ajax.js"></script>
+    <script type="text/javascript" src="./js/verProcessoAndamento.js"></script>
+
+
+
+<!--<link href="/portal/util/conf/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/conf/css/rybena.css" rel="stylesheet" type="text/css" />
+    <<script src="/portal/util/conf/js/jquery.min.js"></script>
+    <script src="/portal/util/conf/js/jquery-ui.min.js"></script>
+    <script src="/portal/util/conf/js/rybena.js"></script>
+	<!--
+	<script> 
+      var $j = jQuery.noConflict();
+      $j(document).ready(function() {
+          $j("#libras").draggable();
+          $j("#voz").draggable();
+      });
+    </script>      -->
+
+    
+    
+	
+	
+    
+</head>
+
+<body>
+	<div id="pagina">
+    
+    	<div style="position:absolute;">
+        	<img src="/portal/util/imagem/header/mascara.gif" alt="link para p&aacute;gina principal" width="482px" height="80px" usemap="#Map" border="0"/>
+            <map name="Map" id="Map">
+            <area shape="rect" coords="4,3,489,83" href="http://www.stf.jus.br/portal/principal/principal.asp" alt="link para p&aacute;gina principal"/>
+            </map>
+			<map name="Map2" id="Map2" style="display:none;">
+				<a href="http://www.stf.jus.br/portal/principal/principal.asp">Página principal</a>
+			</map>
+      	</div>
+    
+<div id='headerdia1'><div style='height:20px;position:absolute;right:283px;top:60px;color:#fff'>      
+		<div id="divNaoImprimir">
+	            Bras&iacute;lia, 29 de dezembro de 2015 - 16:02
+        </div>
+</div>
+          
+			<div id="menuBotao">
+				<ul>
+					<li id="botaoEspacoServidor" style="margin-left: 187px; font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="https://servidor.stf.jus.br/">Espaço do Servidor</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEnglish" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=en_us">ENGLISH</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEspanol" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/">ESPAÑOL</a>
+					</li>
+					<li id="botaoMapaSite" style="padding-left:301px;margin-top:3px;">
+						<a href="/portal/mapaSite/">Mapa do Portal</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="infoLogin">                
+				<form name="pesquisaPortalPrincipal" id="pesquisaPortalPrincipal" method="GET" action="../pesquisa/listarPesquisa.asp" style="padding-left:7px;">
+                    
+					<label id="labelTermo" for="termo" style="display:none;">termo</label>                     
+                    <input type="text" name="termo" id="termo" value="" maxlength="30" style="width: 150px; " />
+                    <input type="button" value=" " onclick="document.pesquisaPortalPrincipal.submit();" title="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" alt="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" id="btExecutarPesquisa" style="background:url(../util/imagem/botao/botaoPesquisar.gif) top no-repeat;border:0; width:70px; height:18px; cursor:pointer;"  />
+                </form>
+                <div id="naoCompletaPesquisa" style="padding-left:10px; font-size:11px; color:red; display:none;">Informe o termo</div>                        
+                
+			</div>
+			<div id="menuPrincipalConteiner">
+			<div id="menuPrincipal">
+				<ul>
+					<li id="principalPrincipal">
+						<a href="/portal/principal/">Principal</a>
+					</li>
+					<li id="principalSobreStf">
+						<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Sobre o STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Conheça o STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfComposicaoComposicaoPlenariaApresentacao">Composição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfAcervoArquivo">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=pt_br">Internacional</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfLinkJuridico">Links</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfEstudoSci">Estudos SCI</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfOrganograma">Organograma do STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConcursoPublico">Concursos Públicos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=curriculoMagistrados&pagina=inscritosCnj">Currículo de Magistrados</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalEstatistica">
+						<a href="/portal/cms/verTexto.asp?servico=estatistica">Estatísticas do STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=acervoinicio">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=decisoesinicio">Decisões</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pautainicio">Pauta do Plenário</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=competenciarecursal">Competência Recursal</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=entendainicio">Glossario/entenda</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=movimentoProcessual">Movimento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaClasse">Pesquisa por Classe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=processoCompetenciaPresidente">Proc. Competência Presidência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=adi">Controle Concentrado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=REAIProcessoDistribuido">RE, AI e ARE - % Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=hc">HC</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaRamoDireito">Pesquisa por Ramo do Direito</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalProcesso">
+						<a href="/portal/processo/">Processos</a>
+						<ul>
+							<span>
+								<a href="/portal/processo/">Acompanhamento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/pauta/">Pautas de Julgamento</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/audienciaPublica/">Audiências Públicas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/certidao">Pedido de Certidão</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalJurisprudencia">
+						<a href="/portal/jurisprudencia/">Jurisprudência</a>
+						<ul>
+							<span>
+								<a href="/portal/jurisprudencia/">Pesquisa</a>
+							<br/></span>
+							<span>
+								<a href="/portal/inteiroTeor/">Inteiro Teor de Acórdãos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaRepositorioJurisprudencia">Repositórios de Jurisprudência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaPropostaSumulaVinculante">Proposta Súmula Vinculante</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumulaVinculante">Súmulas Vinculantes</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumula">Súmulas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudencia/pesquisarSumula.asp">Aplicação das Súmulas no STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudenciaRepercussao/listarRepercussaoGeral.asp">Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaOmissaoInconstitucional">Omissão Inconstitucional</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalPublicacao">
+						<a href="/portal/diarioJustica/">Publicações</a>
+						<ul>
+							<span>
+								<a href="javascript:void window.open('http://redir.stf.jus.br/livrariasupremo','livrariaStf');">Livraria do Supremo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/diarioJustica/">DJ/DJe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoLegislacaoAnotada">Legislação Anotada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/indiceRtj/">RTJ Eletrônica</a>
+							<br/></span>
+							<span>
+								<a href="/portal/informativo/">Informativo STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoInformativoRG">Boletim Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoTematica">Publicações Temáticas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoInstitucionalAberturaAno">Publicações Institucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/ataDistribuicao/">Atas de Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/autenticacao/">Autenticação de Documentos</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalBiblioteca">
+						<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Biblioteca</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Consultas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/biblioteca/pesquisarBibliotecaDigital.asp">Biblioteca Digital</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaServicoEmprestimo">Serviços</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaSobreBibliotecaHistorico">Sobre a Biblioteca</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalNoticia">
+						<a href="/portal/cms/listarNoticiaUltima.asp">Imprensa</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/listarNoticiaUltima.asp">Notícias STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarCobertura.asp">Coberturas Especiais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaTvJustica">TV Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaRadioJustica">Rádio Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarImagem.asp">Banco de Imagens</a>
+							<br/></span>
+							<span>
+								<a href="/portal/agendaMinistro/">Agenda dos Ministros</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaArtigoDiscurso">Artigos e Discursos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaEntrevista">Entrevistas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/glossario/">Glossário Jurídico</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://www.youtube.com/stf','stfYouTube');">STF no YouTube</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://twitter.com/stf_oficial','stfTwitter');">STF no Twitter</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalLegislacao">
+						<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Legislação</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Planalto e Senado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/atoNormativo/">Atos Normativos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoTratadoExtradicaoTextual&pagina=IndiceTratadoExtradicao">Tratados de Extradição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoRegimentoInterno">Regimento Interno Atual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaRI">Regimentos Anteriores</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoConstituicao">Constituições</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaPec&pagina=principal">Emendas Constitucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoAtasSessoesAdministrativas&pagina=atasSessoesAdministrativas">Atas de Sessões Administrativas</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalAcessoInformacao">
+						<a href="/portal/cms/verTexto.asp?servico=centralDoCidadaoAcessoInformacao">Acesso à Informacao</a>
+					</li>
+				</ul>
+			</div>
+
+
+			</div>
+		</div>
+		<div id="conteiner">
+			<div id="breadcrumb">
+				<div id="navegacao">
+					<a href="/portal/processo/">Processos</a> &gt; Acompanhamento Processual
+				</div>
+                
+                
+                
+                <!-- codigo teste rybena   
+                <div id="barraRybena" style="position: absolute; left:520px; top:3px;">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26"  />
+                    <map name="rybenamap">
+                        <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." onclick="chamaLibras()"   style="cursor: pointer" />
+                        <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." onclick="chamaVoz()" style="cursor: pointer"/> 
+                    </map>
+                    <div id="libras" class="drag" style="visibility: hidden"></div> 
+                    <div id="voz" class="drag" style="visibility: hidden"></div> 
+                </div>            -->    
+                
+                <!--     
+                <div style="position:absolute; left:520px; top:3px;">
+                             
+                    <div id="Rybenadialog" title="RybenaPlayer"></div>
+                    <div id="Vozdialog" title="CPqD Voz"></div>
+                
+                    <div id="barra_rybena">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26" />
+                        <map name="rybenamap">
+                          <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." id="opener"  onmouseup="carregaRybena()" onclick="libras()"   style="cursor: pointer" />
+                          <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." id="openerVoz" onmouseup="carregaVoz()" onclick="voz()" style="cursor: pointer"/> 
+                        </map>
+                    </div>
+                </div>    
+                -->   
+                <!-- codigo teste rybena -->
+    
+               
+					<div style="float:right; padding-top:4px;">
+					<form method="post" action="" name="interface">
+					<div id="acessoRapido">
+						<label id="labelFavoritos" for="acesso" style="display:none;">Favoritos</label>
+						<select id="acesso" name="acesso" onchange="linkAcesso()">
+                            <option value="0" selected>Favoritos:</option>
+							<option value="0">------------------------------------------</option>
+
+							<option value="../acessoRapido/">Configurar acesso r&aacute;pido...</option>
+						</select>
+					</div>
+				</form>
+				</div>
+				<div id="tamanho" style="margin-right:197px;">
+					<span>Tamanho</span>
+					<ul>
+						<li id="tamanhoDiminuir"><a href="#" onclick="sysAlterarTamanhoFonte('-'); return false;">Diminuir Fonte</a></li>
+						<li id="tamanhoAumentar"><a href="#" onclick="sysAlterarTamanhoFonte('+'); return false;">Aumentar Fonte</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="corpo">
+                <div id="menu">
+                    <h2>Processos</h2>
+                    <ul>
+						<li class="ativo">
+						<a href="/portal/processo/">Acompanhamento Processual</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=Informacoes_gerais_apos_desligamento_v1" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoRequisitoAcesso" style="">Requisitos de Acesso</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=principal" style="">Sobre o Pet V2</a>
+        </li>
+        <li class="">
+            <a href="http://www.stf.jus.br/portal/processo/redirecionamentoPeticaoEletronica.asp?versao=v2" style="">Acessar o e-STF v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoManualeSTF&pagina=Videos_Tutoriais_do_Peticionamento_Eletronico" style="">Vídeos Tutoriais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoFAQV2&pagina=faqv2" style="">FAQ Pet v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoResolucao" style="">Resoluções</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronicaPlantao" style="">Plantão Judicial</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComoIntegrar" style="">Como se integrar ao STF</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoTribunalAssociado" style="">Tribunais Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoOrgaoAssociado" style="">Órgãos Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComunicado" style="">Comunicados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoRecebimento" style="">Recebimento de processos</a>
+        </li>
+        <li class="">
+            <a href="/portal/origem/consultarProcessoDevolvido.asp" style="">Consulta de Avisos</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoTecnica" style="">Informações Técnicas</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoContato" style="">Contatos</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>						</li>
+						<li class="">
+						<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>						</li>
+						<li class="">
+						<a href="/portal/pauta/">Pautas de Julgamento</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=custaProcessual" style="">Tabela de Custas</a>
+        </li>
+        <li class="">
+            <a href="/portal/recolhimentoDeCustas/" style="">Emitir GRU</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/audienciaPublica/">Audiências Públicas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>						</li>
+						<li class="">
+						<a href="/portal/certidao">Pedido de Certidão</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>						</li>
+					</ul>
+<div class='sysBloco' style='margin-top:10PX;'></div>				</div>
+
+				<div class="conteudo">
+					<div id="barraTitulo">
+Acompanhamento Processual
+						<a href="#" id="imprimir" onclick="sysImprimir(); return false;">Imprimir</a>
+
+				    </div>
+<style>span.andamentoIndevido, tr.andamentoIndevido td, tr.andamentoIndevido td a { text-decoration: line-through; }</style><input type='hidden' id='numeroIncidente' value='4727470' /><div id='divPush' style='height:15px;color:red;text-align:right;font-size:10px;margin-bottom: 6px;padding: 7px;background: #DFE8ED;'>
+				<a href="../push/autenticarUsuario.asp?incluirProcesso=S"><img src="./imagem/bt_adiciona_push.jpg" alt="Incluir processo ao push" title="Incluir processo ao push" style="vertical-align:middle"></a>
+			</div><div  id='carregarAjax'></div><div id='divImpressaoProcessos'><div id="detalheProcesso">
+<h3><strong>Inq&nbsp;3984 - INQUÉRITO</strong>
+                             <span style="color:#066194;">(Processo físico)</span><br></h3>
+<table width="100%" class="comum">
+<tr>
+<td>Origem:</td>
+<td><strong>DF - DISTRITO FEDERAL</strong></td>
+</tr>
+<tr>
+<td style="width: 80px;">Relator atual:</td>
+<td><strong>MIN. TEORI ZAVASCKI</strong></td>
+</tr>
+<tr>
+<td>AUTOR(A/S)(ES)</td>
+<td><strong>MINISTÉRIO PÚBLICO FEDERAL </strong></td>
+</tr>
+<tr>
+<td>PROC.(A/S)(ES)</td>
+<td><strong>PROCURADOR-GERAL DA REPÚBLICA </strong></td>
+</tr>
+<tr>
+<td>INVEST.(A/S)</td>
+<td><strong>JOSÉ RENAN VASCONCELOS CALHEIROS </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>EUGENIO PACELLI DE OLIVEIRA E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+<td>INVEST.(A/S)</td>
+<td><strong>ANÍBAL GOMES </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>GUSTAVO ADOLPHO DANTAS SOUTO </strong></td>
+</tr>
+<tr>
+</tr>
+</table>
+</div>
+<div class="abasAcompanhamento">
+<ul class="abas">
+<li><a href="#" class="ativo">Andamentos</a></li>
+<li><a href="../diarioJustica/listarDiarioJustica.asp?tipoPesquisaDJ=AP&amp;numero=3984&amp;classe=Inq">
+                            DJ/DJe</a></li>
+<li><a href="../jurisprudencia/listarConsolidada.asp?classe=Inq&amp;numero=3984&amp;origem=AP">
+                            Jurisprudência</a></li>
+<li><a href="verProcessoDeslocamento.asp?incidente=4727470">
+                            Deslocamentos</a></li>
+<li><a href="verProcessoDetalhe.asp?incidente=4727470">
+                            Detalhes</a></li>
+<li><a href="verProcessoPeticao.asp?incidente=4727470">
+                            Petições</a></li>
+<li class="ultima"><a href="verProcessoRecurso.asp?incidente=4727470">
+                            Recursos</a></li>
+</ul>
+<table class="resultadoAndamentoProcesso">
+<caption class="hide">
+                                Resultados da busca
+                                </caption>
+<tr>
+<th scope="col" width="70" align="center">Data</th>
+<th scope="col" align="center">Andamento</th>
+<th scope="col" width="64" align="center">Órgão Julgador</th>
+<th scope="col" align="center">Observação</th>
+<th scope="col" width="80" align="center">Documento</th>
+</tr>
+<tr>
+<td><span>16/12/2015</span> </td>
+<td><span>Expedido Ofício nº</span> </td>
+<td><span></span> </td>
+<td><span>4573, ao Sr, Josélio Azevedo de Sousa, Delegado de Polícia Federal. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/12/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 252, divulgado em 15/12/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=308360076&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/12/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de um ofício.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/12/2015</span> </td>
+<td><span>Ciência</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/12/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 250, divulgado em 11/12/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=308348784&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/12/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 10.12.2015: "Defiro a solicitação da autoridade policial (petição
+59.024/2015) ratificada pelo Procurador-Geral da República (petição
+62.603/2015), determinando a juntada de cópia do termo de colaboração 6
+de Walmir Pinheiro Santana (Pet 5.780) aos autos deste inquérito.
+Remeta-se à autoridade policial.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/12/2015</span> </td>
+<td><span>Expedido Ofício nº</span> </td>
+<td><span></span> </td>
+<td><span>4485, ao Sr, Josélio Azevedo de Sousa, Delegado de Polícia Federal.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/12/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de um ofício.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/12/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 7.12.2015: "Defiro a prorrogação de prazo para conclusão das
+diligências restantes, solicitadas pela autoridade policial (petição
+57841/2015), ratificada pelo Procurador-Geral da República (petição
+63735/2015), até 7.2.2016, a teor do art. 230-C, caput, e § 1º, do RISTF.
+Oportunamente, juntem-se as petições 57841/2015 e 63735/2015.
+Oficie-se.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/12/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>63735/2015 - 07/12/2015 -  PROCURADOR-GERAL DA REPÚBLICA -  Requer prorrogação de prazo.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/12/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>62603/2015 - 01/12/2015 - Procurador-Geral da República - requer providências.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/11/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>61731/2015 - 26/11/2015 -  JOSÉ RENAN VASCONCELOS CALHEIROS - Requer juntada de procuração e/ou substabelecimento requer vistas.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/11/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 231, divulgado em 17/11/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=308176783&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/11/2015</span> </td>
+<td><span>Vista à PGR</span> </td>
+<td><span></span> </td>
+<td><span>da petição 59.024/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/11/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>59024/2014 - 13/11/2015 -  OFÍCIO Nº 1224/2015 - RE 0017/2015-1 - DPF/MJ, Departamento de Polícia Federal - Requer envio de termo de colaboração.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/11/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>58465/2015 - 11/11/2015 - BRADESCO, 03/11/2015 - Presta informação em atenção ao ofício n°3575/R.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/11/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>57841/2015 - 09/11/2015 -  Ofício nº1199/2015-RE 0017/2015-1-DPF/MJ-GINQ/STF/DICOR, Departamento de Polícia Federal - Requer concessão de prazo.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/09/2015</span> </td>
+<td><span>Expedido(a)</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO - COMUNICAÇÃO DESPACHO DECISÃO - RELATOR - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/09/2015</span> </td>
+<td><span>Comunicação assinada</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO - COMUNICAÇÃO DESPACHO DECISÃO - RELATOR - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de 1 ofício. Despacho de 3.9.2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/09/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 177, divulgado em 08/09/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=307679003&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/09/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 3.9.2015: "Defiro a prorrogação de prazo para conclusão das
+diligências restantes, solicitadas pela autoridade policial (petição
+43420/2015), e ratificada pelo Procurador-Geral da República (petição
+44031/2015), até 3.11.2015, a teor do art. 230-C, caput, e § 1º, do RISTF.
+Oportunamente, juntem-se as petições 43420/2015 e 44031/2015.
+Oficie-se.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/09/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>44031/2015 - 02/09/2015 - MINISTÉRIO PÚBLICO FEDERAL - requer prorrogação de prazo.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>43420/2015 - 31/08/2015 -  Oficio nº 899/2015 - RE 17/2015-1 - DPF/MJ - GINQ - DEPARTAMENTO DE POLÍCIA FEDERAL - Presta informações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/07/2015</span> </td>
+<td><span>Expedido Ofício nº</span> </td>
+<td><span></span> </td>
+<td><span>2592, ao Sr, Thiago Machado Delabary, Delegado Polícia Federal.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/07/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 128, divulgado em 30/06/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=307137312&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/06/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 29.6.2015: "Defiro a prorrogação de prazo para conclusão das
+diligências restantes solicitadas pela autoridade policial (petição
+32226/2015) e ratificada pelo Procurador-Geral da República (petição
+32596/2015), até 31.8.2015, a teor do art. 230-C, caput, e § 1º, do RISTF.
+Oportunamente, juntem-se as petições e 32226/2015 e 32596/2015.
+Oficie-se.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/06/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>32596/2015 - 29/06/2015 -  PROCURADOR-GERAL DA REPÚBLICA - Requer prorrogação de prazo.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/06/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>32226/2015 - 26/06/2015 -  Ofício nº 0613/2015-RE 0017/2015-1-DPF/MJ-GINQ, Departamento de Polícia Federal - Requer concessão de prazo.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/06/2015</span> </td>
+<td><span>Expedido(a)</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO - COMUNICAÇÃO DESPACHO DECISÃO - RELATOR - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/06/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 107, divulgado em 03/06/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=306971106&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/06/2015</span> </td>
+<td><span>Comunicação assinada</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO - COMUNICAÇÃO DESPACHO DECISÃO - RELATOR - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/06/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de 1 ofício. Despacho de 1.6.2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/06/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 105, divulgado em 02/06/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=306964457&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/06/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 1º.6.2015: "...defiro o acesso aos documentos já materializados,
+devendo o requerente solicitar diretamente à Seção de Processos
+Originários Criminais deste Tribunal que seja disponibilizada a mídia
+digital correspondente.
+Oportunamente, junte-se a petição 23855/2015.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/06/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>27400/2015 - 01/06/2015 -  Paulo Roberto Baeta Neves - Requer juntada de procuração.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/06/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 1º.6.2015: "...poderá o requerente solicitar diretamente à Seção
+de Processos Originários Criminais deste Tribunal que seja
+disponibilizada cópia integral dos presentes autos.
+Oficie-se à autoridade policial competente.
+Oportunamente, junte-se a petição 27044/2015.
+Publique-se. Intimem-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>27044/2015 - 29/05/2015 -  Paulo Roberto Baeta Neves - Presta informações e requer providências.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>23855/2015 - 14/05/2015 - ANÍBAL FrEREIRA GOMES GOMES - Requer providências. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>23694/2015 - 14/05/2015 - EUGENIO PACELLI DE OLIVEIRA - Requer juntada de procuração e/ou substabelecimento.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/05/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 82, divulgado em 04/05/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15335290727&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/04/2015</span> </td>
+<td><span>Expedido(a)</span> </td>
+<td><span></span> </td>
+<td><span>FAX - COMUNICAÇÃO DESPACHO/DECISÃO - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/04/2015</span> </td>
+<td><span>Comunicação assinada</span> </td>
+<td><span></span> </td>
+<td><span>FAX - COMUNICAÇÃO DESPACHO/DECISÃO - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/04/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de 1 fax. Decisão de 29.4.2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/04/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 29.4.2015: "...defiro a prorrogação de prazo para a conclusão do
+inquérito, por 60 (sessenta) dias a partir de hoje, a teor do art. 230-C,
+caput, do RISTF. Defiro também, nessa linha, as diligências requeridas
+pelo Procurador-Geral da República no item 2.
+Oportunamente, junte-se a petição 18979/2015 e apensem-se nestes
+autos o Inq 3.993.
+Oficie-se.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/04/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>18979/2015 - 22/04/2015 - Ministério Público Federal - requer providências</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/04/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 72, divulgado em 16/04/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15330201085&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico que, nesta data, o Dr. Eduardo Botão Pelella, Procurador Regional da República, comparaceu ao gabinete do Ministro Relator, onde tomou ciência dos despachos e decisões proferidos nestes autos até a presente data.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de ciência do despacho de 14/04/2015, pelo Ministério Público. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 14/04/2015:"...dê-se vista ao Ministério Público".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/04/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>16904/2015 - 13/04/2015 - Ofício nº 0197/2015-RE 0017/2015-1-DPF/MJ-GINQ, Departamento de Polícia Federal, 10/04/2015 -Presta informações e requer prorrogação de prazo.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/04/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Juntada de documentos - Petição: 15110 Data: 06/04/2015 09:01:03.339 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Juntada de documentos - Petição: 12718 Data: 21/03/2015 15:51:30.353 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/03/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>12430/2015 - 20/03/2015 -  Eugenio Pacelli de Oliveira e outro - Requer juntada de procuração.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/03/2015</span> </td>
+<td><span>Baixa dos autos em diligência, Guia nº</span> </td>
+<td><span></span> </td>
+<td><span>9986/2015 - CORREGEDORIA GERAL DO DEPARTAMENTO DE POLÍCIA FEDERAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/03/2015</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos à Seção de Baixa e Expedição, para encaminhamento à Polícia Federal</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/03/2015</span> </td>
+<td><span>Distribuído por prevenção</span> </td>
+<td><span></span> </td>
+<td><span>MIN. TEORI ZAVASCKI</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/03/2015</span> </td>
+<td><span>Autuado</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+</table>
+</div>
+</div><!-- 4727470 --><div id='chamaVerImpressao' style='visibility:hidden;'></div>
+				</div>
+			</div> 
+			
+			<div style="font-size: 6px;">&nbsp;</div>
+			
+      	<div id="rodape" style="padding-top: 5px; border-top: solid 1px silver;">
+      
+				Pra&ccedil;a dos Tr&ecirc;s Poderes - Bras&iacute;lia - DF - CEP 70175-900 Telefone: 55.61.3217.3000 | 
+					<a href="../cms/verTexto.asp?servico=sobreStfConhecaStfTelefoneUtil">Telefones &Uacute;teis</a> | 
+					<a href="/portal/push/">STF Push</a> | 
+					<a href="../RSS/" class="rss">Canais RSS</a>
+			</div>
+	
+		</div>
+
+
+
+	</div> 
+	
+	<iframe title="Quadro de auto ajuda" id="sysQuadroAutoAjuda" style="display: none; position: absolute; border: 0px; z-index: 98;"></iframe>
+    <noframes> Seu navegador n&atilde;o suporta frames. </noframes>
+	
+	<script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-9066701-4");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>   
+   
+
+</body>
+
+</html>

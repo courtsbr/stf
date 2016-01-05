@@ -1,0 +1,2369 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" href="/portal/util/imagem/icone/favicon.ico" >
+    <title>
+    Acompanhamento Processual :: STF - Supremo Tribunal Federal
+    </title>
+    <link href="/portal/util/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/impressao.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_table.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_page.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/themes/stf/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="/portal/util/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.dataTables.min.js"></script>     
+    <script type="text/javascript" src="/portal/util/js/jquery.maskedinput-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.maskMoney.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.js"></script>   
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.extra.js"></script>      
+    <script type="text/javascript" src="/portal/util/js/menu.js"></script>    
+    <script type="text/javascript" src="/portal/util/js/util.js"></script>
+    <script type="text/javascript" src="/portal/util/js/ajax.js"></script>
+    <script type="text/javascript" src="./js/verProcessoAndamento.js"></script>
+
+
+
+<!--<link href="/portal/util/conf/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/conf/css/rybena.css" rel="stylesheet" type="text/css" />
+    <<script src="/portal/util/conf/js/jquery.min.js"></script>
+    <script src="/portal/util/conf/js/jquery-ui.min.js"></script>
+    <script src="/portal/util/conf/js/rybena.js"></script>
+	<!--
+	<script> 
+      var $j = jQuery.noConflict();
+      $j(document).ready(function() {
+          $j("#libras").draggable();
+          $j("#voz").draggable();
+      });
+    </script>      -->
+
+    
+    
+	
+	
+    
+</head>
+
+<body>
+	<div id="pagina">
+    
+    	<div style="position:absolute;">
+        	<img src="/portal/util/imagem/header/mascara.gif" alt="link para p&aacute;gina principal" width="482px" height="80px" usemap="#Map" border="0"/>
+            <map name="Map" id="Map">
+            <area shape="rect" coords="4,3,489,83" href="http://www.stf.jus.br/portal/principal/principal.asp" alt="link para p&aacute;gina principal"/>
+            </map>
+			<map name="Map2" id="Map2" style="display:none;">
+				<a href="http://www.stf.jus.br/portal/principal/principal.asp">Página principal</a>
+			</map>
+      	</div>
+    
+<div id='headerdia2'><div style='height:20px;position:absolute;right:283px;top:60px;color:#fff'>      
+		<div id="divNaoImprimir">
+	            Bras&iacute;lia, 29 de dezembro de 2015 - 16:02
+        </div>
+</div>
+          
+			<div id="menuBotao">
+				<ul>
+					<li id="botaoEspacoServidor" style="margin-left: 187px; font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="https://servidor.stf.jus.br/">Espaço do Servidor</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEnglish" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=en_us">ENGLISH</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEspanol" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/">ESPAÑOL</a>
+					</li>
+					<li id="botaoMapaSite" style="padding-left:301px;margin-top:3px;">
+						<a href="/portal/mapaSite/">Mapa do Portal</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="infoLogin">                
+				<form name="pesquisaPortalPrincipal" id="pesquisaPortalPrincipal" method="GET" action="../pesquisa/listarPesquisa.asp" style="padding-left:7px;">
+                    
+					<label id="labelTermo" for="termo" style="display:none;">termo</label>                     
+                    <input type="text" name="termo" id="termo" value="" maxlength="30" style="width: 150px; " />
+                    <input type="button" value=" " onclick="document.pesquisaPortalPrincipal.submit();" title="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" alt="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" id="btExecutarPesquisa" style="background:url(../util/imagem/botao/botaoPesquisar.gif) top no-repeat;border:0; width:70px; height:18px; cursor:pointer;"  />
+                </form>
+                <div id="naoCompletaPesquisa" style="padding-left:10px; font-size:11px; color:red; display:none;">Informe o termo</div>                        
+                
+			</div>
+			<div id="menuPrincipalConteiner">
+			<div id="menuPrincipal">
+				<ul>
+					<li id="principalPrincipal">
+						<a href="/portal/principal/">Principal</a>
+					</li>
+					<li id="principalSobreStf">
+						<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Sobre o STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Conheça o STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfComposicaoComposicaoPlenariaApresentacao">Composição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfAcervoArquivo">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=pt_br">Internacional</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfLinkJuridico">Links</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfEstudoSci">Estudos SCI</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfOrganograma">Organograma do STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConcursoPublico">Concursos Públicos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=curriculoMagistrados&pagina=inscritosCnj">Currículo de Magistrados</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalEstatistica">
+						<a href="/portal/cms/verTexto.asp?servico=estatistica">Estatísticas do STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=acervoinicio">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=decisoesinicio">Decisões</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pautainicio">Pauta do Plenário</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=competenciarecursal">Competência Recursal</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=entendainicio">Glossario/entenda</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=movimentoProcessual">Movimento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaClasse">Pesquisa por Classe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=processoCompetenciaPresidente">Proc. Competência Presidência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=adi">Controle Concentrado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=REAIProcessoDistribuido">RE, AI e ARE - % Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=hc">HC</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaRamoDireito">Pesquisa por Ramo do Direito</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalProcesso">
+						<a href="/portal/processo/">Processos</a>
+						<ul>
+							<span>
+								<a href="/portal/processo/">Acompanhamento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/pauta/">Pautas de Julgamento</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/audienciaPublica/">Audiências Públicas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/certidao">Pedido de Certidão</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalJurisprudencia">
+						<a href="/portal/jurisprudencia/">Jurisprudência</a>
+						<ul>
+							<span>
+								<a href="/portal/jurisprudencia/">Pesquisa</a>
+							<br/></span>
+							<span>
+								<a href="/portal/inteiroTeor/">Inteiro Teor de Acórdãos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaRepositorioJurisprudencia">Repositórios de Jurisprudência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaPropostaSumulaVinculante">Proposta Súmula Vinculante</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumulaVinculante">Súmulas Vinculantes</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumula">Súmulas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudencia/pesquisarSumula.asp">Aplicação das Súmulas no STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudenciaRepercussao/listarRepercussaoGeral.asp">Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaOmissaoInconstitucional">Omissão Inconstitucional</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalPublicacao">
+						<a href="/portal/diarioJustica/">Publicações</a>
+						<ul>
+							<span>
+								<a href="javascript:void window.open('http://redir.stf.jus.br/livrariasupremo','livrariaStf');">Livraria do Supremo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/diarioJustica/">DJ/DJe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoLegislacaoAnotada">Legislação Anotada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/indiceRtj/">RTJ Eletrônica</a>
+							<br/></span>
+							<span>
+								<a href="/portal/informativo/">Informativo STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoInformativoRG">Boletim Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoTematica">Publicações Temáticas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoInstitucionalAberturaAno">Publicações Institucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/ataDistribuicao/">Atas de Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/autenticacao/">Autenticação de Documentos</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalBiblioteca">
+						<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Biblioteca</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Consultas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/biblioteca/pesquisarBibliotecaDigital.asp">Biblioteca Digital</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaServicoEmprestimo">Serviços</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaSobreBibliotecaHistorico">Sobre a Biblioteca</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalNoticia">
+						<a href="/portal/cms/listarNoticiaUltima.asp">Imprensa</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/listarNoticiaUltima.asp">Notícias STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarCobertura.asp">Coberturas Especiais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaTvJustica">TV Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaRadioJustica">Rádio Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarImagem.asp">Banco de Imagens</a>
+							<br/></span>
+							<span>
+								<a href="/portal/agendaMinistro/">Agenda dos Ministros</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaArtigoDiscurso">Artigos e Discursos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaEntrevista">Entrevistas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/glossario/">Glossário Jurídico</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://www.youtube.com/stf','stfYouTube');">STF no YouTube</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://twitter.com/stf_oficial','stfTwitter');">STF no Twitter</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalLegislacao">
+						<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Legislação</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Planalto e Senado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/atoNormativo/">Atos Normativos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoTratadoExtradicaoTextual&pagina=IndiceTratadoExtradicao">Tratados de Extradição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoRegimentoInterno">Regimento Interno Atual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaRI">Regimentos Anteriores</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoConstituicao">Constituições</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaPec&pagina=principal">Emendas Constitucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoAtasSessoesAdministrativas&pagina=atasSessoesAdministrativas">Atas de Sessões Administrativas</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalAcessoInformacao">
+						<a href="/portal/cms/verTexto.asp?servico=centralDoCidadaoAcessoInformacao">Acesso à Informacao</a>
+					</li>
+				</ul>
+			</div>
+
+
+			</div>
+		</div>
+		<div id="conteiner">
+			<div id="breadcrumb">
+				<div id="navegacao">
+					<a href="/portal/processo/">Processos</a> &gt; Acompanhamento Processual
+				</div>
+                
+                
+                
+                <!-- codigo teste rybena   
+                <div id="barraRybena" style="position: absolute; left:520px; top:3px;">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26"  />
+                    <map name="rybenamap">
+                        <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." onclick="chamaLibras()"   style="cursor: pointer" />
+                        <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." onclick="chamaVoz()" style="cursor: pointer"/> 
+                    </map>
+                    <div id="libras" class="drag" style="visibility: hidden"></div> 
+                    <div id="voz" class="drag" style="visibility: hidden"></div> 
+                </div>            -->    
+                
+                <!--     
+                <div style="position:absolute; left:520px; top:3px;">
+                             
+                    <div id="Rybenadialog" title="RybenaPlayer"></div>
+                    <div id="Vozdialog" title="CPqD Voz"></div>
+                
+                    <div id="barra_rybena">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26" />
+                        <map name="rybenamap">
+                          <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." id="opener"  onmouseup="carregaRybena()" onclick="libras()"   style="cursor: pointer" />
+                          <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." id="openerVoz" onmouseup="carregaVoz()" onclick="voz()" style="cursor: pointer"/> 
+                        </map>
+                    </div>
+                </div>    
+                -->   
+                <!-- codigo teste rybena -->
+    
+               
+					<div style="float:right; padding-top:4px;">
+					<form method="post" action="" name="interface">
+					<div id="acessoRapido">
+						<label id="labelFavoritos" for="acesso" style="display:none;">Favoritos</label>
+						<select id="acesso" name="acesso" onchange="linkAcesso()">
+                            <option value="0" selected>Favoritos:</option>
+							<option value="0">------------------------------------------</option>
+
+							<option value="../acessoRapido/">Configurar acesso r&aacute;pido...</option>
+						</select>
+					</div>
+				</form>
+				</div>
+				<div id="tamanho" style="margin-right:197px;">
+					<span>Tamanho</span>
+					<ul>
+						<li id="tamanhoDiminuir"><a href="#" onclick="sysAlterarTamanhoFonte('-'); return false;">Diminuir Fonte</a></li>
+						<li id="tamanhoAumentar"><a href="#" onclick="sysAlterarTamanhoFonte('+'); return false;">Aumentar Fonte</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="corpo">
+                <div id="menu">
+                    <h2>Processos</h2>
+                    <ul>
+						<li class="ativo">
+						<a href="/portal/processo/">Acompanhamento Processual</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=Informacoes_gerais_apos_desligamento_v1" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoRequisitoAcesso" style="">Requisitos de Acesso</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=principal" style="">Sobre o Pet V2</a>
+        </li>
+        <li class="">
+            <a href="http://www.stf.jus.br/portal/processo/redirecionamentoPeticaoEletronica.asp?versao=v2" style="">Acessar o e-STF v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoManualeSTF&pagina=Videos_Tutoriais_do_Peticionamento_Eletronico" style="">Vídeos Tutoriais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoFAQV2&pagina=faqv2" style="">FAQ Pet v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoResolucao" style="">Resoluções</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronicaPlantao" style="">Plantão Judicial</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComoIntegrar" style="">Como se integrar ao STF</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoTribunalAssociado" style="">Tribunais Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoOrgaoAssociado" style="">Órgãos Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComunicado" style="">Comunicados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoRecebimento" style="">Recebimento de processos</a>
+        </li>
+        <li class="">
+            <a href="/portal/origem/consultarProcessoDevolvido.asp" style="">Consulta de Avisos</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoTecnica" style="">Informações Técnicas</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoContato" style="">Contatos</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>						</li>
+						<li class="">
+						<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>						</li>
+						<li class="">
+						<a href="/portal/pauta/">Pautas de Julgamento</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=custaProcessual" style="">Tabela de Custas</a>
+        </li>
+        <li class="">
+            <a href="/portal/recolhimentoDeCustas/" style="">Emitir GRU</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/audienciaPublica/">Audiências Públicas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>						</li>
+						<li class="">
+						<a href="/portal/certidao">Pedido de Certidão</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>						</li>
+					</ul>
+<div class='sysBloco' style='margin-top:10PX;'></div>				</div>
+
+				<div class="conteudo">
+					<div id="barraTitulo">
+Acompanhamento Processual
+						<a href="#" id="imprimir" onclick="sysImprimir(); return false;">Imprimir</a>
+
+				    </div>
+<style>span.andamentoIndevido, tr.andamentoIndevido td, tr.andamentoIndevido td a { text-decoration: line-through; }</style><input type='hidden' id='numeroIncidente' value='2258854' /><div id='divPush' style='height:15px;color:red;text-align:right;font-size:10px;margin-bottom: 6px;padding: 7px;background: #DFE8ED;'>
+				<a href="../push/autenticarUsuario.asp?incluirProcesso=S"><img src="./imagem/bt_adiciona_push.jpg" alt="Incluir processo ao push" title="Incluir processo ao push" style="vertical-align:middle"></a>
+			</div><div  id='carregarAjax'></div><div id='divImpressaoProcessos'><div id="detalheProcesso">
+<h3><strong>ADI&nbsp;3357 - AÇÃO DIRETA DE INCONSTITUCIONALIDADE</strong>
+                             <span style="color:#066194;">(Processo físico)</span><br></h3><a style="text-decoration:none;" href=" http://redir.stf.jus.br/estfvisualizadorpub/jsp/consultarprocessoeletronico/ConsultarProcessoEletronico.jsf?seqobjetoincidente=2258854" title="Nos processos físicos, nem todas as peças poderão estar disponíveis" target="_blank"><span style="color: red; font-weight: bold; font-size: 9pt;">[Ver peças eletrônicas]</span></a><table width="100%" class="comum">
+<tr>
+<td>Origem:</td>
+<td><strong>RS - RIO GRANDE DO SUL</strong></td>
+</tr>
+<tr>
+<td style="width: 80px;">Relator atual:</td>
+<td><strong>MIN. AYRES BRITTO</strong></td>
+</tr>
+<tr>
+<td>REQTE.(S)</td>
+<td><strong>CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDÚSTRIA </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>JOAO PEDRO FERRAZ DOS PASSOS E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+<td>INTDO.(A/S)</td>
+<td><strong>GOVERNADOR DO ESTADO DO RIO GRANDE DO SUL </strong></td>
+</tr>
+<tr>
+<td>INTDO.(A/S)</td>
+<td><strong>ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL </strong></td>
+</tr>
+<tr>
+<td>AM. CURIAE.</td>
+<td><strong>ASSOCIAÇÃO BRASILEIRA DOS EXPOSTOS AO AMIANTO - ABREA </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>ROBERTO DE FIGUEIREDO CALDAS </strong></td>
+</tr>
+<tr>
+<td>AM. CURIAE.</td>
+<td><strong>INSTITUTO BRASILEIRO DO CRISOTILA </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>CARLOS MÁRIO DA SILVA VELLOSO FILHO E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>CARLOS MIGUEL CASTEX AIDAR </strong></td>
+</tr>
+<tr>
+<td>AM. CURIAE.</td>
+<td><strong>ASSOCIAÇÃO BRASILEIRA DAS INDÚSTRIAS E DISTRIBUIDORES DE PRODUTOS DE FIBROCIMENTO - ABIFIBRO </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>OSCAVO CORDEIRO CORRÊA NETTO </strong></td>
+</tr>
+<tr>
+<td>AM. CURIAE.</td>
+<td><strong>ASSOCIAÇÃO NACIONAL DOS PROCURADORES DO TRABALHO - ANPT </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>ROBERTO DE FIGUEIREDO CALDAS E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+</tr>
+</table>
+</div>
+<div class="abasAcompanhamento">
+<ul class="abas">
+<li><a href="#" class="ativo">Andamentos</a></li>
+<li><a href="../diarioJustica/listarDiarioJustica.asp?tipoPesquisaDJ=AP&amp;numero=3357&amp;classe=ADI">
+                            DJ/DJe</a></li>
+<li><a href="../jurisprudencia/listarConsolidada.asp?classe=ADI&amp;numero=3357&amp;origem=AP">
+                            Jurisprudência</a></li>
+<li><a href="verProcessoDeslocamento.asp?incidente=2258854">
+                            Deslocamentos</a></li>
+<li><a href="verProcessoDetalhe.asp?incidente=2258854">
+                            Detalhes</a></li>
+<li><a href="verProcessoPeticao.asp?incidente=2258854">
+                            Petições</a></li>
+<li><a href="../peticaoInicial/verPeticaoInicial.asp?base=ADIN&amp;s1=3357&amp;processo=3357">
+                                Petição Inicial</a></li>
+<li class="ultima"><a href="verProcessoRecurso.asp?incidente=2258854">
+                            Recursos</a></li>
+</ul>
+<table class="resultadoAndamentoProcesso">
+<caption class="hide">
+                                Resultados da busca
+                                </caption>
+<tr>
+<th scope="col" width="70" align="center">Data</th>
+<th scope="col" align="center">Andamento</th>
+<th scope="col" width="64" align="center">Órgão Julgador</th>
+<th scope="col" align="center">Observação</th>
+<th scope="col" width="80" align="center">Documento</th>
+</tr>
+<tr>
+<td><span>10/08/2015</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos ao Gabinete da Presidência (somente o volume 14).</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 36657/2015.36657/2015 - Conselho Federal da Ordem dos Advogados do Brasil encaminha procuração e indica nome para futuras publicações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Procuração/Substabelecimento - Petição: 36657 Data: 03/08/2015 10:23:58.533 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/09/2013</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos ao Gabinete da Presidência 
+(14 volumes e 5 juntadas por linha)</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/08/2013</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 41699/2013.41699/2013 - Do Instituto Brasileiro de Mineração - IBRAM, requerendo sua admissão no feito na qualidade de "amicus curiae". </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/08/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>41699/2013 - 27/08/2013 - Instituto Brasileiro de Mineração - IBRAM - Requer ingresso como "amicus curiae" e indica nome para intimações/publicações/notificações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/03/2013</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos ao Gabinete da Presidência (11 volumes e 5 juntadas por linha).</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/03/2013</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 9893/2013.9893/2013 -  ASSOCIAÇÃO BRASILEIRA DOS EXPOSTOS AO AMIANTO - ABREA - REQUER JUNTADA DE SUBSTABELECIMENTO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/03/2013</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>9893/2013 - 08/03/2013 -  ASSOCIAÇÃO BRASILEIRA DOS EXPOSTOS AO AMIANTO - ABREA - REQUER JUNTADA DE PROCURAÇÃO E/OU SUBSTABELECIMENTO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/11/2012</span> </td>
+<td><span>Decisão de julgamento (Lei 9.868/99) publicada no DJE e no DOU</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/11/2012</span> </td>
+<td><span>Ata de Julgamento Publicada, DJE</span> </td>
+<td><span></span> </td>
+<td><span>ATA Nº 32, de 31/10/2012.  DJE nº 233, divulgado em 27/11/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/11/2012</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>da certidão de julgamento referente à sessão do Plenário de 31.10.2012.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/10/2012</span> </td>
+<td><span>Suspenso o julgamento</span> </td>
+<td><span></span> </td>
+<td><span>Decisão: Após o voto do Ministro Ayres Britto (Relator), julgando improcedente a ação direta e o voto do Ministro Marco Aurélio, julgando-a procedente, o julgamento foi suspenso. Ausentes, licenciado, o Ministro Joaquim Barbosa e, neste julgamento, a Ministra Cármen Lúcia. Falaram, pela requerente, Confederação Nacional dos Trabalhadores na Indústria (ADIs 3357 e 3937), o Dr. Marcelo Henriques Ribeiro de Oliveira; pelo interessado, Governador do Estado de São Paulo (ADI 3937), o Dr. Thiago Luís Sombra, Procurador do Estado; pelo amicus curiae, Sindicato dos Trabalhadores na Indústria da Extração de Minerais Não-Metálicos de Minaçu-GO (ADI 3937), o Dr. Antônio José Telles de Vasconcellos; pelo amicus curiae, Instituto Brasileiro do Crisotila, o Dr. Carlos Mário da Silva Velloso Filho; pelo amicus curiae, Associação Nacional dos Procuradores do Trabalho - ANPT (ADIs 3357 e 3937), o Dr. Roberto de Figueiredo Caldas; pelo amicus curiae, Associação Brasileira dos Expostos ao </span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3241848&amp;tipoApp=RTF"><span>Decisão de Julgamento</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/10/2012</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>31/10/2012 - Conclusos ao(à) Relator(a)</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">31/10/2012</span> </td>
+<td><span class="andamentoIndevido">Conclusos ao(à) Relator(a)</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido"></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/10/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 57063/2012.57063/2012, da Associação Nacional dos Procuradores do Trabalho - ANPT - requerendo deferimento do pedido de sustentação oral.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/10/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 57062/2012.57062/2012, da Associação Brasileira dos Expostos ao Amianto - ABREA - requerendo deferimento do pedido de sustentação oral.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/10/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/10/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 56748/2012.56748/2012, da Associação Nacional dos Procuradores do Trabalho - ANPT, requerendo juntada de substabelecimento.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/10/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 57063 Data: 30/10/2012 18:51:46.70 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/10/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 57062 Data: 30/10/2012 18:45:50.89 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/10/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 56748 Data: 29/10/2012 18:03:33.43 GMT-02:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/10/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>com 11 volumes e 5 juntadas por linha.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/10/2012</span> </td>
+<td><span>Juntada por linha</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 46306/2012, do Conselho Federal da Ordem dos Advogados do Brasil - CFOAB, requerendo sua admissão no feito na qualidade de "amicus curiae".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/10/2012</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>02/10/2012 - Juntada a petição nº</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/10/2012</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 27/09/2012 (DJE nº 194, divulgado em 02/10/2012)</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=102079780&amp;tipoApp=.pdf"><span>Decisão monocrática</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">02/10/2012</span> </td>
+<td><span class="andamentoIndevido">Juntada a petição nº</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido"> 46306/2012.46306/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/10/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 27.09.2012 na Petição 46.306/2012 "Trata-se de petição pela qual o Conselho Federal da Ordem dos Advogados do Brasil (OAB) requer seu ingresso no feito, na condição de amicus curiae. (...) 4. Ante o exposto, indefiro o pedido. Junte-se a petição, por linha. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/09/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 46306 Data: 06/09/2012 19:21:16.228 GMT-03:00. Ao Gabiente do Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/07/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>somente volume 11.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/07/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 34742/2012.34742/2012, da Assembléia Legislativa do Estado do Rio Grande do Sul requerendo preferência para o julgamento do feito.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/07/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>34742/2012 - 02/07/2012 -  ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL - REQUER PREFERÊNCIA PARA O JULGAMENTO DO FEITO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/06/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>Somente o 11º volume.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/06/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 28081/2012.28081/2012,  do Instituto Brasileiro do Crisotila - IBC - requer juntada de procuração e/ou substabelecimento e indica nome para intimações/publicações/notificações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/06/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 25541/2012.25541/2012, do Instituto Brasileiro do Crisotila - IBC - prestando informações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/05/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>28081/2012 - 30/05/2012 -   INSTITUTO BRASILEIRO DO CRISOTILA -  REQUER JUNTADA DE PROCURAÇÃO E/OU SUBSTABELECIMENTO E INDICA NOME PARA INTIMAÇÕES/PUBLICAÇÕES/NOTIFICAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/05/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>25541/2012 - 17/05/2012 -  INSTITUTO BRASILEIRO DO CRISOTILA - PRESTA INFORMAÇÃO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/04/2012</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>19/04/2012 - Substituição do Relator, art. 38 do RISTF</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">19/04/2012</span> </td>
+<td><span class="andamentoIndevido">Substituição do Relator, art. 38 do RISTF</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido">MIN. CEZAR PELUSO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>com 11 volumes e 4 juntadas por linha.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>com 11 volumes e 4 juntadas por linha.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2012</span> </td>
+<td><span>Interposto agravo regimental</span> </td>
+<td><span></span> </td>
+<td><span>Juntada Petição: 16229/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 14458/2012.14458/2012 - Procuração da Confederação Nacional dos Trabalhadores na Indústria - CNTI.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2012</span> </td>
+<td><span>Juntada por linha</span> </td>
+<td><span></span> </td>
+<td><span>Petição nº 13634/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/04/2012</span> </td>
+<td><span>Desentranhamento de peças</span> </td>
+<td><span></span> </td>
+<td><span>Petição nº 13634/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/04/2012</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 27/03/2012 (DJE nº 66, divulgado em 30/03/2012)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3131637&amp;tipoApp=RTF"><span>Decisão Monocrática</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/04/2012</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 27/03/2012 (DJE nº 66, divulgado em 30/03/2012)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3131673&amp;tipoApp=RTF"><span>Decisão Monocrática</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/03/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 16229 Data: 30/03/2012 17:06:53.564 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/03/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 27/3/2012: "(Referente à Petição nº 13.634/2012) Trata-se de petição pela qual o Município de Minaçu/GO requer seu ingresso no feito, na condição de amicus curiae. (...) 4. Ante o exposto, indefiro o pedido. Junte-se a petição, por linha. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/03/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 27/3/2012: "(referente à Petição nº 9.643/2012) Na decisão de fls 2.392/2.393, pela qual indeferi o ingresso nos autos, na condição de amici curiae, do Estado de Goiás e do Sindicato dos Trabalhadores na Indústria da Extração de Minerais Não-Metálicos de Minaçu/GO, ocorreu erro material, consistente na referência ao Estado do Pará como peticionante. Erro que retifico neste momento, transcrevendo a   correta redação da decisão anterior: (...) Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/03/2012</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 20/03/2012 (DJE nº 60, divulgado em 22/03/2012)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3129070&amp;tipoApp=RTF"><span>Despacho</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/03/2012</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 20/03/2012 (DJE nº 60, divulgado em 22/03/2012)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3129128&amp;tipoApp=RTF"><span>Decisão Monocrática</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/03/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 14458 Data: 22/03/2012 18:37:30.289 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/03/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>com 11 volumes e 3 juntadas por linha</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 13634/2012.13634/2012 do Município de Minaçu requerendo ingresso no feito na qualidade de amicus curiae e encaminhando documentos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2012</span> </td>
+<td><span>Juntada por linha</span> </td>
+<td><span></span> </td>
+<td><span>Petição 12375/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2012</span> </td>
+<td><span>Juntada por linha</span> </td>
+<td><span></span> </td>
+<td><span>Petição n. 9643/2012.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2012</span> </td>
+<td><span>Desentranhamento de peças</span> </td>
+<td><span></span> </td>
+<td><span>Petição 12375/2012</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2012</span> </td>
+<td><span>Desentranhamento de peças</span> </td>
+<td><span></span> </td>
+<td><span>Petição n. 9643/2012.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 20/3/2012: "(Referente à Petição nº 9.059/2012) Defiro o pedido de vista dos autos, em cartório. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/03/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 20/3/2012: "(Referente às Petições n. 9.643/2012 e 12.375/2012) Trata-se de petições pelas quais o Estado do Pará e o Sindicato dos Trabalhadores na Indústria da Extração de Minerais Não-Metálicos de Minaçu/GO requerem seu ingresso no feito, na condição de amici curiae. (...)  4. Ante o exposto, indefiro os pedidos. Juntem-se as petições, por linha. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/03/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>13634/2012 - 20/03/2012 -  MUNICÍPIO DE MINAÇU, ESTADO DE GOIÁS - REQUER INGRESSO COMO "AMICUS CURIAE".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2012</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>Somente com o volume 10.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 12375/2012.12375/2012 - O Sindicato Dos Trabalhadores na Indústria da Extração de Minerais Não-Metálicas de Minaçu-GO, requer autorização de sua intervenção como "Amicus Curie".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 9643/2012.9643/2012 - ESTADO DE GOIÁS - REQUER ADMISSÃO COMO "AMICUS CURIAE".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 9059/2012.9059/2012 - INSTITUTO BRASILEIRO DO CRISOTILA - REQUER JUNTADA DE SUBSTABELECIMENTO, VISTA DOS AUTOS E INDICA NOME PARA PUBLICAÇÕES/INTIMAÇÕES/NOTIFICAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 8718/2012.8718/2012 - CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDÚSTRIA - REQUER JUNTADA DE PROCURAÇÃO E/OU SUBSTABELECIMENTO E INDICA NOME PARA INTIMAÇÕES/PUBLICAÇÕES/NOTIFICAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 8358/2012.8358/2012 - Associação Brasileira Dos Expostos ao Amianto - ABREA, requer o deferimento do pedido de sustentação ora do patrono da ABREA.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2012</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 8354/2012.8354/2012 - Associação Nacional Dos Procuradores Do Trabalho - ANPT, requer o deferimento do pedido de sustentação oral do patrono da ANPT.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/03/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 12375 Data: 13/03/2012 16:10:31.102 GMT-03:00</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/03/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 23/2/2012, ref. Petição n. 8358/2012: "Junte-se. À Presidência."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/02/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>9643/2012 - 28/02/2012 -  ESTADO DE GOIÁS - REQUER ADMISSÃO COMO "AMICUS CURIAE".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/02/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>9059/2012 - 24/02/2012 -  INSTITUTO BRASILEIRO DO CRISOTILA - REQUER JUNTADA DE SUBSTABELECIMENTO, VISTA DOS AUTOS E INDICA NOME PARA PUBLICAÇÕES/INTIMAÇÕES/NOTIFICAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/02/2012</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 17/02/2012 (DJE nº 38, divulgado em 23/02/2012)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3114626&amp;tipoApp=RTF"><span>Decisão Monocrática</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/02/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>8718/2012 - 23/02/2012 -   CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDÚSTRIA -  REQUER JUNTADA DE PROCURAÇÃO E/OU SUBSTABELECIMENTO E INDICA NOME PARA INTIMAÇÕES/PUBLICAÇÕES/NOTIFICAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/02/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 8358 Data: 22/02/2012 17:36:28.741 GMT-02:00. Ao Gabinete do Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/02/2012</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>Petição: 8354 Data: 22/02/2012 17:27:30.887 GMT-02:00. Ao Gabinete do Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/02/2012</span> </td>
+<td><span>Desentranhamento de peças</span> </td>
+<td><span></span> </td>
+<td><span>Documentos de folhas 405 à 914, em cumprimento ao despacho de 17/2/2012.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/02/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 17/2/2012, ref. Petição 67165/2005: "Ante a relevância da matéria e representatividade do postulante, defiro a inclusão, como amicus curiae, do Instituto Brasileiro do Crisotila. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/02/2012</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 17/2/2012: "vistos, etc. À Secretaria, para desentranhar dos autos os documentos de fls. 405 a 914 e juntá-los na ADI 3415, ação a que se referem."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/02/2010</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 22/2/2010 no PG nº 4201/2010 (DJE nº 35, divulgado em 25/02/2010)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=2760300&amp;tipoApp=RTF"><span>Despacho</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/02/2010</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>ao Gabinete do Ministro Ayres Britto. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/02/2010</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 22/2/2010 no PG nº 4201/2010: "Com toda vênia, indefiro o pedido. Segundo reconhece a própria peticionante, a pesquisa ainda não apresentou resultados conclusivos. Nada obsta, porém, que a requerente traga a este Supremo Tribunal Federal, a qualquer momento, os documentos e informações que entender necessários para o deslinde da questão em exame nestes autos. Ainda que o processo já esteja em pauta para julgamento de mérito. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/02/2010</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>ao Gabinete do Ministro Ayres Britto.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/02/2010</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 4201/2010, da Confederação Nacional dos Trabalhadores na Indústria, requer expedição de ofício para solicitação de informações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/02/2010</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 4201/2010, da Confederação Nacional dos Trabalhadores na Indústria, requer expedição de ofício para solicitação de informações.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/12/2009</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 04/12/2009 no PG nº 134375/2009  (DJE nº 235, divulgado em 15/12/2009)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=2728580&amp;tipoApp=RTF"><span>Despacho</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/12/2009</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 04/12/2009 no PG nº 134.375/2009: "Sem embargo da legítima preocupação da requerente, expressa na muito bem elaborada petição de fls. 1634/1638, mantenho a decisão de fls. 1620, por seus próprios fundamentos, até porque o processo já está em pauta para julgamento de mérito. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/12/2009</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 134375/2009, da Confederação Nacional dos Trabalhadores na Indústria, requerendo reconsideração do despacho que indeferiu a designação de audiência pública.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/11/2009</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 134375/2009, da Confederação Nacional dos Trabalhadores na Indústria, requerendo reconsideração do despacho que indeferiu a designação de audiência pública.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/10/2009</span> </td>
+<td><span>Pauta publicada no DJE - Plenário</span> </td>
+<td><span></span> </td>
+<td><span>PAUTA Nº 39/2009.  DJE nº 195, divulgado em 15/10/2009</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/10/2009</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos ao gabinete do Ministro Relator.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/10/2009</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>e distribuição de relatório.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/10/2009</span> </td>
+<td><span>Inclua-se em pauta - minuta extraída</span> </td>
+<td><span></span> </td>
+<td><span>Pleno Em 07/10/2009 19:30:04</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/10/2009</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/09/2009</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 121946/2009, da Associação Brasileira das Industrias e Distribuidores de Produtos de Fibrocimento - ABIFibro, requerendo a juntada do original do substabelecimento outorgado à signatária.  </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/09/2009</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 121946/2009, da Associação Brasileira das Industrias e Distribuidores de Produtos de Fibrocimento - ABIFibro, requerendo a juntada do original do substabelecimento outorgado à signatária.  </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/09/2009</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>Despacho de 21.09.2009 no PG nº 114950/2008 (DJE nº 182, divulgado em 25/09/2009)</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=2431002&amp;tipoApp=RTF"><span>Despacho</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/09/2009</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 119104/2009, de 23/09/2009 - ANA PAULA SILVA MIRANDA -  REQUER EXPEDIÇÃO DE CERTIDÃO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/09/2009</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 117575/2009, de Ana Paula Silva Miranda, apresentando substabelecimento de mandato outorgado pela ABIFibro, afim de que possa obter cópias do feito.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/09/2009</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 114950/2008, da Confederação Nacional dos Trabalhadores na Indústria, requerendo a designação de comissão de peritos para emissão de parecer e promoção de audiência pública.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/09/2009</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 21.09.2009 no PG nº 114950/2008:  "Junte-se.2.Indefiro o pedido de "designação de uma comissão de peritos para emissão de parecer sobre a questão, assim como a promoção de audiência pública para a realização do debate da matéria". O que faço por entender desnecessária a designação de audiência pública para ouvir pessoas "com experiência e autoridade na matéria" fática subjacente à presente ação direta de inconstitucionalidade  (§ 1º do art. 9º da Lei nº 9.868/99).Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/09/2009</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 117575/2009, de Ana Paula Silva Miranda, apresentando substabelecimento de mandato outorgado pela ABIFibro, afim de que possa obter cópias do feito.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2008</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 114950/2008, da Confederação Nacional dos Trabalhadores na Indústria, requerendo a designação de comissão de peritos para emissão de parecer e promoção de audiência pública. Ao Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/05/2008</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>despacho de 23/05/08 no PG nº 72646/2008  DJE nº 96, divulgado em 28/05/2008</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=2377075&amp;tipoApp=RTF"><span>Despacho</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/05/2008</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/05/2008</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 72646/2008, da Associação Nacional dos Procuradores do Trabalho - ANPT, requerendo sua admissão no feito na qualidade de "amicus curiae". </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/05/2008</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>no PG nº 72646/2008: "Vistos, etc. Junte-se. Ante a relevância da matéria e a representatividade da Associação Nacional dos Procuradores do Trabalho (ANPT), defiro a sua inclusão no processo, na qualidade de amicus curiae. À Secretaria, para as devidas anotações. Publique-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/05/2008</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span>PG nº 72646/2008, da Associação Nacional dos Procuradores do Trabalho - ANPT, requerendo sua admissão no feito na qualidade de amicus curiae. Ao Ministro Relator, sem os autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/06/2007</span> </td>
+<td><span>PUBLICACAO, DJ:</span> </td>
+<td><span></span> </td>
+<td><span>DESPACHO DE 24.05.2007 NO PG 78274/07.</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=2108365&amp;tipoApp=RTF"><span>Despacho</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/05/2007</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/05/2007</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 78274/07 DA ASSOCIAÇÃO BRASILEIRA DAS INDÚSTRIAS E DISTRIBUIDORES DE PRODUTOS DE FIBROCIMENTO - ABIFIBRO, REQUERENDO SUA ADMISSÃO NO FEITO NA QUALIDADE DE 'AMICUS CURIAE'.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/05/2007</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 24/05/07 NO PG Nº 78274/07 "JUNTE-SE. ANTE A RELEVÂNCIA DA MATÉRIA E A REPRESENTATIVIDADE DA POSTULANTE, DEFIRO A INCLUSÃO, COMO AMICUS CURIAE, DA ASSOCIAÇÃO BRASILEIRA DAS INDÚSTRIAS E DISTRIBUIDORAS DE PRODUTOS DE FIBROCIMENTO - ABIFIBRO. À SECRETARIA PARA PROVIDÊNCIAS CABÍVEIS."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/05/2007</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 78274/07 DA ASSOCIAÇÃO BRASILEIRA DAS INDÚSTRIAS E DISTRIBUIDORES DE PRODUTOS DE FIBROCIMENTO - ABIFIBRO, REQUERENDO SUA ADMISSÃO NO FEITO NA QUALIDADE DE 'AMICUS CURIAE'. AO MINISTRO RELATOR, SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/05/2007</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/05/2007</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 59706/07 DA CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDÚSTRIA, REQUERENDO PREFERÊNCIA NO JULGAMENTO DA PRESENTE AÇÃO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/05/2007</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 27/04/07 NO PG 59706/07 "JUNTE- SE"</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/04/2007</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 59706/07 DA CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDÚSTRIA, REQUERENDO PREFERÊNCIA NO JULGAMENTO DA PRESENTE AÇÃO. AO MINISTRO RELATOR, SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/02/2006</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/02/2006</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 1052/06 DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL, REQUERENDO A JUNTADA DE DOCUMENTOS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/02/2006</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 1º/02/06 NO PG Nº 1052/06: JUNTE-SE. CONCLUSOS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/02/2006</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 1052/06 DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL, REQUERENDO A JUNTADA DE DOCUMENTOS. AO MINISTRO RELATOR, SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/01/2006</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 1052/06 DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL, REQUERENDO A JUNTADA DE DOCUMENTOS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/06/2005</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/06/2005</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 67165/05 DO INSTITUTO BRASILEIRO DO CRISOTILA REQUERENDO A JUNTADA DOS ESTATUTOS SOCIAIS E DA ATA DE POSSE DA ATUAL DIRETORIA, EM CUMPRIMENTO AO DESPACHO DE 23.05.2005</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/05/2005</span> </td>
+<td><span>PUBLICACAO, DJ:</span> </td>
+<td><span></span> </td>
+<td><span>DO DESPACHO DE 23/05/05</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/05/2005</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span>LANÇAMENTO INDEVIDO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/05/2005</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG Nº 61901/05 DO INSTITUTO BRASILEIRO DO CRISOTILA.REQUERENDO SUA ADMISSÃO NO FEITO NA QUALIDADE DE "AMICUS CURIAE". .</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/05/2005</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 23.05.05 REFERENTE À PG Nº 61901/05  "JUNTE-SE.   INTIME-SE A PETICIONANTE PARA JUNTAR,  NO PRAZO DE 5 (CINCO) DIAS, CÓPIA DOS AUTOS DOS SEUS ESTATUTOS SOCIAIS, BEM COMO DA ATA DE POSSE DA SUA ATUAL DIRETORIA. APÓS, DECIDIREI A RESPEITO DO PEDIDO DE ADMISSÃO DO INSTITUTO BRASILEIRO DO CRISOTILA NO PROCESSO, NA QUALIDADE DE AMICUS CURIAE".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/05/2005</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 61901/05 DO INSTITUTO BRASILEIRO DO CRISOTILA REQUERENDO SUA ADMISSÃO NO FEITO NA QUALIDADE DE AMICUS CURIAE. AO MINISTRO RELATOR SEM OS AUTOS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/05/2005</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/05/2005</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 58945/05 DA CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDUSTRIA - CNTI REQUERENDO A JUNTADA DE SUBSTABELECIMENTO.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/05/2005</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>NO PG Nº 58945/05  "JUNTE-SE, CONCLUSOS".</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/05/2005</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 58945/05 DA CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDUSTRIA - CNTI REQUERENDO A JUNTADA DE SUBSTABELECIMENTO. AO MINISTRO RELATOR SEM OS AUTOS.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/05/2005</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/05/2005</span> </td>
+<td><span>AUTOS DEVOLVIDOS</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/05/2005</span> </td>
+<td><span>AUTOS EMPRESTADOS</span> </td>
+<td><span></span> </td>
+<td><span>MAURO MACHADO CHAIBEN - Guia =  1004 / 2005 - </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/04/2005</span> </td>
+<td><span>PUBLICACAO, DJ:</span> </td>
+<td><span></span> </td>
+<td><span>DO DESPACHO DO DIA 22/04/05</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/04/2005</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG Nº 43947/05 DA CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDÚSTRIA - CNTI, REQUERENDO A JUNTADA DO SUBSTABELECIMENTO E VISTA DOS AUTOS PELO PRAZO DE 10 (DEZ) DIAS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/04/2005</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 22/04/05 NO PG Nº 43947/05 "JUNTE-SE. DEFIRO."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/04/2005</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 43947/05 DA CONFEDERAÇÃO NACIONAL DOS TRABALHADORES NA INDÚSTRIA - CNTI, REQUERENDO A JUNTADA DO SUBSTABELECIMENTO E VISTA DOS AUTOS PELO PRAZO DE 10 (DEZ) DIAS. AO RELATOR SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/04/2005</span> </td>
+<td><span>PUBLICACAO, DJ:</span> </td>
+<td><span></span> </td>
+<td><span>DO DESPACHO DE 07/04/05</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/04/2005</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/04/2005</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG Nº 31726/05 DA ASSOCIAÇÃO BRASILEIRA DOS EXPOSTOS AO AMIANTO - ABREA REQUERENDO SUA ADMISSÃO AO FEITO NA QUALIDADE DE AMICUS CURIAE.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/04/2005</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 07/04/05 NO PG Nº 31726/05 "JUNTE-SE. DEFIRO O PEDIDO. À SECRETARIA PARA INCLUIR NA AUTUAÇÃO, COMO 'AMICUS CURIAE' (INTERESSADA), A ASSOCIAÇÃO BRASILEIRA DOS EXPOSTOS AO AMIANTO - ABREA, ANOTANDO-SE O NOME DO SEU ILUSTRE REPRESENTANTE."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/03/2005</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 31726/05 DA ASSOCIAÇÃO BRASILEIRA DOS EXPOSTOS AO AMIANTO - ABREA REQUERENDO SUA ADMISSÃO AO FEITO NA QUALIDADE DE AMICUS CURIAE. AO MINISTRO RELATOR, SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/03/2005</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/03/2005</span> </td>
+<td><span>JUNTADA POR LINHA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG Nº 23642/05 DA MESA DIRETORA DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL, REQUERENDO A JUNTADA DE PARECER.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/03/2005</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 10/03/05 NO PG Nº 23642/05 "JUNTE-SE POR LINHA"</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/03/2005</span> </td>
+<td><span>PETIÇÃO</span> </td>
+<td><span></span> </td>
+<td><span>PG Nº 23642/05 DA MESA DIRETORA DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL, REQUERENDO A JUNTADA DE PARECER. AO MINISTRO RELATOR SEM OS AUTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/02/2005</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/02/2005</span> </td>
+<td><span>RECEBIMENTO DOS AUTOS</span> </td>
+<td><span></span> </td>
+<td><span>DA PROCURADORIA GERAL DA REPÚBLICA, COM PARECER PELA PROCEDÊNCIA DO PEDIDO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/02/2005</span> </td>
+<td><span>VISTA AO PROCURADOR-GERAL DA REPUBLICA</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/02/2005</span> </td>
+<td><span>RECEBIMENTO DOS AUTOS</span> </td>
+<td><span></span> </td>
+<td><span>DA ADVOCACIA-GERAL DA UNIÃO, COM MANIFESTAÇÃO (PG Nº 10204/05)</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/01/2005</span> </td>
+<td><span>VISTA AO ADVOGADO-GERAL DA UNIAO</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/01/2005</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG Nº 7707/05 DO GOVERNADOR DO ESTADO DO RIO GRANDE DO SUL, PRESTANDO INFORMAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/01/2005</span> </td>
+<td><span>INFORMACOES RECEBIDAS, OFICIO NRO.:</span> </td>
+<td><span></span> </td>
+<td><span>4555/R (PG Nº 7707/05 DO GOVERNADOR DO ESTADO DO RIO GRANDE DO SUL.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/01/2005</span> </td>
+<td><span>JUNTADA</span> </td>
+<td><span></span> </td>
+<td><span>DO PG Nº 2971/05 DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL, PRESTANDO INFORMAÇÕES.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/01/2005</span> </td>
+<td><span>INFORMACOES RECEBIDAS, OFICIO NRO.:</span> </td>
+<td><span></span> </td>
+<td><span>4556/R (PG 2971/05) DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/01/2005</span> </td>
+<td><span>JUNTADA DE AVISO DE RECEBIMENTO</span> </td>
+<td><span></span> </td>
+<td><span>RB 16419776 2 BR AO GOVERNADOR DO ESTADO DO RIO GRANDE DO SUL, RECEBIDO EM 20/12/04.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/01/2005</span> </td>
+<td><span>JUNTADA DE AVISO DE RECEBIMENTO</span> </td>
+<td><span></span> </td>
+<td><span>RB 16419775 9 BR AO PRESIDENTE DA ASSEMBLÉIA LEGISLATIVA DO ESTADO DO RIO GRANDE DO SUL, RECEBIDO EM 20/12/04.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/12/2004</span> </td>
+<td><span>PEDIDO DE INFORM. ASSEMBLEIA LEGISLATIVA</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO Nº 4556/R  - PRAZO 10 (DEZ) DIAS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/12/2004</span> </td>
+<td><span>PEDIDO DE INFORMACOES AO GOVERNADOR</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO Nº 4555/R  - PRAZO 10 (DEZ) DIAS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/12/2004</span> </td>
+<td><span>PUBLICACAO, DJ:</span> </td>
+<td><span></span> </td>
+<td><span>DO DESPACHO DO DIA 2/12/04</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/12/2004</span> </td>
+<td><span>DESPACHO ORDINATORIO</span> </td>
+<td><span></span> </td>
+<td><span>EM 02.12.04 "ADOTO, NA ESPÉCIE, A RITUALÍSTICA PREVISTA NO ART. 12 DA LEI Nº 9.868/99. DIANTE DISSO, SOLICITEM-SE INFORMAÇÕES AO PRESIDENTE DA ASSEMBLÉIA LEGISLATIVA GAÚCHA E AO GOVERNADOR DO ESTADO DO RIO GRANDE DO SUL. EM SEGUIDA, OUÇAM-SE, SUCESSIVAMENTE, O ADVOGADO-GERAL DA UNIÃO E O PROCURADOR-GERAL DA REPÚBLICA PARA QUE SE PRONUNCIEM A RESPEITO DA PRESENTE AÇÃO DIRETA."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/11/2004</span> </td>
+<td><span>CONCLUSOS AO RELATOR</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/11/2004</span> </td>
+<td><span>DISTRIBUIDO</span> </td>
+<td><span></span> </td>
+<td><span>MIN. CARLOS BRITTO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+</table>
+</div>
+</div><!-- 2258854 --><div id='chamaVerImpressao' style='visibility:hidden;'></div>
+				</div>
+			</div> 
+			
+			<div style="font-size: 6px;">&nbsp;</div>
+			
+      	<div id="rodape" style="padding-top: 5px; border-top: solid 1px silver;">
+      
+				Pra&ccedil;a dos Tr&ecirc;s Poderes - Bras&iacute;lia - DF - CEP 70175-900 Telefone: 55.61.3217.3000 | 
+					<a href="../cms/verTexto.asp?servico=sobreStfConhecaStfTelefoneUtil">Telefones &Uacute;teis</a> | 
+					<a href="/portal/push/">STF Push</a> | 
+					<a href="../RSS/" class="rss">Canais RSS</a>
+			</div>
+	
+		</div>
+
+
+
+	</div> 
+	
+	<iframe title="Quadro de auto ajuda" id="sysQuadroAutoAjuda" style="display: none; position: absolute; border: 0px; z-index: 98;"></iframe>
+    <noframes> Seu navegador n&atilde;o suporta frames. </noframes>
+	
+	<script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-9066701-4");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>   
+   
+
+</body>
+
+</html>

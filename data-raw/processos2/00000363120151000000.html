@@ -1,0 +1,2763 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="robots" content="noindex">
+
+    <link rel="shortcut icon" href="/portal/util/imagem/icone/favicon.ico" >
+    <title>
+    Acompanhamento Processual :: STF - Supremo Tribunal Federal
+    </title>
+    <link href="/portal/util/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/header.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/home.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/util.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/impressao.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_table.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/demo_page.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/css/themes/stf/jquery-ui-1.8.5.custom.css" rel="stylesheet" type="text/css"/>
+
+    <script type="text/javascript" src="/portal/util/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery-ui-1.8.9.custom.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.ui.datepicker-pt-BR.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.cycle.all.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.dataTables.min.js"></script>     
+    <script type="text/javascript" src="/portal/util/js/jquery.maskedinput-1.2.2.min.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.maskMoney.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.numeric.js"></script>
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.js"></script>   
+    <script type="text/javascript" src="/portal/util/js/jquery.validate.extra.js"></script>      
+    <script type="text/javascript" src="/portal/util/js/menu.js"></script>    
+    <script type="text/javascript" src="/portal/util/js/util.js"></script>
+    <script type="text/javascript" src="/portal/util/js/ajax.js"></script>
+    <script type="text/javascript" src="./js/verProcessoAndamento.js"></script>
+
+
+
+<!--<link href="/portal/util/conf/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <link href="/portal/util/conf/css/rybena.css" rel="stylesheet" type="text/css" />
+    <<script src="/portal/util/conf/js/jquery.min.js"></script>
+    <script src="/portal/util/conf/js/jquery-ui.min.js"></script>
+    <script src="/portal/util/conf/js/rybena.js"></script>
+	<!--
+	<script> 
+      var $j = jQuery.noConflict();
+      $j(document).ready(function() {
+          $j("#libras").draggable();
+          $j("#voz").draggable();
+      });
+    </script>      -->
+
+    
+    
+	
+	
+    
+</head>
+
+<body>
+	<div id="pagina">
+    
+    	<div style="position:absolute;">
+        	<img src="/portal/util/imagem/header/mascara.gif" alt="link para p&aacute;gina principal" width="482px" height="80px" usemap="#Map" border="0"/>
+            <map name="Map" id="Map">
+            <area shape="rect" coords="4,3,489,83" href="http://www.stf.jus.br/portal/principal/principal.asp" alt="link para p&aacute;gina principal"/>
+            </map>
+			<map name="Map2" id="Map2" style="display:none;">
+				<a href="http://www.stf.jus.br/portal/principal/principal.asp">Página principal</a>
+			</map>
+      	</div>
+    
+<div id='headerdia1'><div style='height:20px;position:absolute;right:283px;top:60px;color:#fff'>      
+		<div id="divNaoImprimir">
+	            Bras&iacute;lia, 29 de dezembro de 2015 - 16:02
+        </div>
+</div>
+          
+			<div id="menuBotao">
+				<ul>
+					<li id="botaoEspacoServidor" style="margin-left: 187px; font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="https://servidor.stf.jus.br/">Espaço do Servidor</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEnglish" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=en_us">ENGLISH</a>
+					</li>
+					<li id="botaoCentralCidadao2" style="font-family: Arial Narrow,Arial; font-size: 8pt; padding: 0px 3px 0px 3px;">
+						<a href="/portal/centralCidadao/"> | </a>
+					</li>
+					<li id="botaoPortalEspanol" style="font-family: Arial Narrow,Arial; font-size: 8pt;">
+						<a href="http://www2.stf.jus.br/portalStfInternacional/">ESPAÑOL</a>
+					</li>
+					<li id="botaoMapaSite" style="padding-left:301px;margin-top:3px;">
+						<a href="/portal/mapaSite/">Mapa do Portal</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="infoLogin">                
+				<form name="pesquisaPortalPrincipal" id="pesquisaPortalPrincipal" method="GET" action="../pesquisa/listarPesquisa.asp" style="padding-left:7px;">
+                    
+					<label id="labelTermo" for="termo" style="display:none;">termo</label>                     
+                    <input type="text" name="termo" id="termo" value="" maxlength="30" style="width: 150px; " />
+                    <input type="button" value=" " onclick="document.pesquisaPortalPrincipal.submit();" title="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" alt="Pesquisar textos, notícias, processos, jurisprudência, contratos, compras, licitações, etc" id="btExecutarPesquisa" style="background:url(../util/imagem/botao/botaoPesquisar.gif) top no-repeat;border:0; width:70px; height:18px; cursor:pointer;"  />
+                </form>
+                <div id="naoCompletaPesquisa" style="padding-left:10px; font-size:11px; color:red; display:none;">Informe o termo</div>                        
+                
+			</div>
+			<div id="menuPrincipalConteiner">
+			<div id="menuPrincipal">
+				<ul>
+					<li id="principalPrincipal">
+						<a href="/portal/principal/">Principal</a>
+					</li>
+					<li id="principalSobreStf">
+						<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Sobre o STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConhecaStfInstitucional">Conheça o STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfComposicaoComposicaoPlenariaApresentacao">Composição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfAcervoArquivo">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="http://www2.stf.jus.br/portalStfInternacional/cms/verPrincipal.php?idioma=pt_br">Internacional</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfLinkJuridico">Links</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfEstudoSci">Estudos SCI</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfOrganograma">Organograma do STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=sobreStfConcursoPublico">Concursos Públicos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=curriculoMagistrados&pagina=inscritosCnj">Currículo de Magistrados</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalEstatistica">
+						<a href="/portal/cms/verTexto.asp?servico=estatistica">Estatísticas do STF</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=acervoinicio">Acervo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=decisoesinicio">Decisões</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pautainicio">Pauta do Plenário</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=competenciarecursal">Competência Recursal</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=entendainicio">Glossario/entenda</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=movimentoProcessual">Movimento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaClasse">Pesquisa por Classe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=processoCompetenciaPresidente">Proc. Competência Presidência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=adi">Controle Concentrado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=REAIProcessoDistribuido">RE, AI e ARE - % Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=hc">HC</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=estatistica&pagina=pesquisaRamoDireito">Pesquisa por Ramo do Direito</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalProcesso">
+						<a href="/portal/processo/">Processos</a>
+						<ul>
+							<span>
+								<a href="/portal/processo/">Acompanhamento Processual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/pauta/">Pautas de Julgamento</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/audienciaPublica/">Audiências Públicas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/certidao">Pedido de Certidão</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalJurisprudencia">
+						<a href="/portal/jurisprudencia/">Jurisprudência</a>
+						<ul>
+							<span>
+								<a href="/portal/jurisprudencia/">Pesquisa</a>
+							<br/></span>
+							<span>
+								<a href="/portal/inteiroTeor/">Inteiro Teor de Acórdãos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaRepositorioJurisprudencia">Repositórios de Jurisprudência</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaPropostaSumulaVinculante">Proposta Súmula Vinculante</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumulaVinculante">Súmulas Vinculantes</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaSumula">Súmulas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudencia/pesquisarSumula.asp">Aplicação das Súmulas no STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/jurisprudenciaRepercussao/listarRepercussaoGeral.asp">Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=jurisprudenciaOmissaoInconstitucional">Omissão Inconstitucional</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalPublicacao">
+						<a href="/portal/diarioJustica/">Publicações</a>
+						<ul>
+							<span>
+								<a href="javascript:void window.open('http://redir.stf.jus.br/livrariasupremo','livrariaStf');">Livraria do Supremo</a>
+							<br/></span>
+							<span>
+								<a href="/portal/diarioJustica/">DJ/DJe</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoLegislacaoAnotada">Legislação Anotada</a>
+							<br/></span>
+							<span>
+								<a href="/portal/indiceRtj/">RTJ Eletrônica</a>
+							<br/></span>
+							<span>
+								<a href="/portal/informativo/">Informativo STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoInformativoRG">Boletim Repercussão Geral</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoTematica">Publicações Temáticas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=publicacaoPublicacaoInstitucionalAberturaAno">Publicações Institucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/ataDistribuicao/">Atas de Distribuição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/autenticacao/">Autenticação de Documentos</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalBiblioteca">
+						<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Biblioteca</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaAcervoStf">Consultas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/biblioteca/pesquisarBibliotecaDigital.asp">Biblioteca Digital</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaServicoEmprestimo">Serviços</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaSobreBibliotecaHistorico">Sobre a Biblioteca</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalNoticia">
+						<a href="/portal/cms/listarNoticiaUltima.asp">Imprensa</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/listarNoticiaUltima.asp">Notícias STF</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarCobertura.asp">Coberturas Especiais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaTvJustica">TV Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=noticiaNoticiaRadioJustica">Rádio Justiça</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarImagem.asp">Banco de Imagens</a>
+							<br/></span>
+							<span>
+								<a href="/portal/agendaMinistro/">Agenda dos Ministros</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaArtigoDiscurso">Artigos e Discursos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/listarNoticia.asp?servico=noticiaEntrevista">Entrevistas</a>
+							<br/></span>
+							<span>
+								<a href="/portal/glossario/">Glossário Jurídico</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://www.youtube.com/stf','stfYouTube');">STF no YouTube</a>
+							<br/></span>
+							<span>
+								<a href="javascript:void window.open('http://twitter.com/stf_oficial','stfTwitter');">STF no Twitter</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalLegislacao">
+						<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Legislação</a>
+						<ul>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoPlanaltoSenado">Planalto e Senado</a>
+							<br/></span>
+							<span>
+								<a href="/portal/atoNormativo/">Atos Normativos</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoTratadoExtradicaoTextual&pagina=IndiceTratadoExtradicao">Tratados de Extradição</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoRegimentoInterno">Regimento Interno Atual</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaRI">Regimentos Anteriores</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoConstituicao">Constituições</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=bibliotecaConsultaProdutoBibliotecaPec&pagina=principal">Emendas Constitucionais</a>
+							<br/></span>
+							<span>
+								<a href="/portal/cms/verTexto.asp?servico=legislacaoAtasSessoesAdministrativas&pagina=atasSessoesAdministrativas">Atas de Sessões Administrativas</a>
+							<br/></span>
+						</ul>
+					</li>
+					<li id="principalAcessoInformacao">
+						<a href="/portal/cms/verTexto.asp?servico=centralDoCidadaoAcessoInformacao">Acesso à Informacao</a>
+					</li>
+				</ul>
+			</div>
+
+
+			</div>
+		</div>
+		<div id="conteiner">
+			<div id="breadcrumb">
+				<div id="navegacao">
+					<a href="/portal/processo/">Processos</a> &gt; Acompanhamento Processual
+				</div>
+                
+                
+                
+                <!-- codigo teste rybena   
+                <div id="barraRybena" style="position: absolute; left:520px; top:3px;">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26"  />
+                    <map name="rybenamap">
+                        <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." onclick="chamaLibras()"   style="cursor: pointer" />
+                        <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." onclick="chamaVoz()" style="cursor: pointer"/> 
+                    </map>
+                    <div id="libras" class="drag" style="visibility: hidden"></div> 
+                    <div id="voz" class="drag" style="visibility: hidden"></div> 
+                </div>            -->    
+                
+                <!--     
+                <div style="position:absolute; left:520px; top:3px;">
+                             
+                    <div id="Rybenadialog" title="RybenaPlayer"></div>
+                    <div id="Vozdialog" title="CPqD Voz"></div>
+                
+                    <div id="barra_rybena">
+                    <img src="/portal/util/conf/img/RybenaLibrasVoz.png" alt="Rybená" usemap ="#rybenamap" border=0  width="170" height="26" />
+                        <map name="rybenamap">
+                          <area shape="rect" coords="56,-1,84,72"  title="Clique aqui para traduzir para LIBRAS o texto selecinado ." id="opener"  onmouseup="carregaRybena()" onclick="libras()"   style="cursor: pointer" />
+                          <area shape="rect" coords="84,-2,110,108" title="Clique aqui para falar o texto selecionado." id="openerVoz" onmouseup="carregaVoz()" onclick="voz()" style="cursor: pointer"/> 
+                        </map>
+                    </div>
+                </div>    
+                -->   
+                <!-- codigo teste rybena -->
+    
+               
+					<div style="float:right; padding-top:4px;">
+					<form method="post" action="" name="interface">
+					<div id="acessoRapido">
+						<label id="labelFavoritos" for="acesso" style="display:none;">Favoritos</label>
+						<select id="acesso" name="acesso" onchange="linkAcesso()">
+                            <option value="0" selected>Favoritos:</option>
+							<option value="0">------------------------------------------</option>
+
+							<option value="../acessoRapido/">Configurar acesso r&aacute;pido...</option>
+						</select>
+					</div>
+				</form>
+				</div>
+				<div id="tamanho" style="margin-right:197px;">
+					<span>Tamanho</span>
+					<ul>
+						<li id="tamanhoDiminuir"><a href="#" onclick="sysAlterarTamanhoFonte('-'); return false;">Diminuir Fonte</a></li>
+						<li id="tamanhoAumentar"><a href="#" onclick="sysAlterarTamanhoFonte('+'); return false;">Aumentar Fonte</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="corpo">
+                <div id="menu">
+                    <h2>Processos</h2>
+                    <ul>
+						<li class="ativo">
+						<a href="/portal/processo/">Acompanhamento Processual</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica">Peticionamento Eletrônico</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=Informacoes_gerais_apos_desligamento_v1" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoRequisitoAcesso" style="">Requisitos de Acesso</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronica&pagina=principal" style="">Sobre o Pet V2</a>
+        </li>
+        <li class="">
+            <a href="http://www.stf.jus.br/portal/processo/redirecionamentoPeticaoEletronica.asp?versao=v2" style="">Acessar o e-STF v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoManualeSTF&pagina=Videos_Tutoriais_do_Peticionamento_Eletronico" style="">Vídeos Tutoriais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoFAQV2&pagina=faqv2" style="">FAQ Pet v.2</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoResolucao" style="">Resoluções</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoPeticaoEletronicaPlantao" style="">Plantão Judicial</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral">Portal de Integração</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoGeral" style="">Informações Gerais</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComoIntegrar" style="">Como se integrar ao STF</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoTribunalAssociado" style="">Tribunais Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoOrgaoAssociado" style="">Órgãos Associados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoComunicado" style="">Comunicados</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoRecebimento" style="">Recebimento de processos</a>
+        </li>
+        <li class="">
+            <a href="/portal/origem/consultarProcessoDevolvido.asp" style="">Consulta de Avisos</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoInformacaoTecnica" style="">Informações Técnicas</a>
+        </li>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=processoIntegracaoContato" style="">Contatos</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoEdital">Editais</a>						</li>
+						<li class="">
+						<a href="/portal/peticaoInicial/">ADI, ADC, ADO e ADPF</a>						</li>
+						<li class="">
+						<a href="/portal/pauta/">Pautas de Julgamento</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=custaProcessual&pagina=Custas_Processuais_GRU_Ficha_Compensacao">Custas Processuais</a>							<ul>
+        <li class="">
+            <a href="/portal/cms/verTexto.asp?servico=custaProcessual" style="">Tabela de Custas</a>
+        </li>
+        <li class="">
+            <a href="/portal/recolhimentoDeCustas/" style="">Emitir GRU</a>
+        </li>
+							</ul>
+						</li>
+						<li class="">
+						<a href="/portal/audienciaPublica/">Audiências Públicas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoPedidoVistaDevolvido">Vistas Devolvidas</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCargaProgramada&pagina=informacoesGerais">Carga Programada</a>						</li>
+						<li class="">
+						<a href="/portal/certidao">Pedido de Certidão</a>						</li>
+						<li class="">
+						<a href="/portal/cms/verTexto.asp?servico=processoCalendarioStf&pagina=calendarioStf">Calendários do STF</a>						</li>
+					</ul>
+<div class='sysBloco' style='margin-top:10PX;'></div>				</div>
+
+				<div class="conteudo">
+					<div id="barraTitulo">
+Acompanhamento Processual
+						<a href="#" id="imprimir" onclick="sysImprimir(); return false;">Imprimir</a>
+
+				    </div>
+<style>span.andamentoIndevido, tr.andamentoIndevido td, tr.andamentoIndevido td a { text-decoration: line-through; }</style><input type='hidden' id='numeroIncidente' value='4727441' /><div id='divPush' style='height:15px;color:red;text-align:right;font-size:10px;margin-bottom: 6px;padding: 7px;background: #DFE8ED;'>
+				<a href="../push/autenticarUsuario.asp?incluirProcesso=S"><img src="./imagem/bt_adiciona_push.jpg" alt="Incluir processo ao push" title="Incluir processo ao push" style="vertical-align:middle"></a>
+			</div><div  id='carregarAjax'></div><div id='divImpressaoProcessos'><div id="detalheProcesso">
+<h3><strong>Inq&nbsp;3983 - INQUÉRITO</strong>
+                            (Segredo de Justiça)<br>
+                             <span style="color:#066194;">(Processo físico)</span><br></h3>
+<table width="100%" class="comum">
+<tr>
+<td>Origem:</td>
+<td><strong>DF - DISTRITO FEDERAL</strong></td>
+</tr>
+<tr>
+<td style="width: 80px;">Relator atual:</td>
+<td><strong>MIN. TEORI ZAVASCKI</strong></td>
+</tr>
+<tr>
+<td>AUTOR(A/S)(ES)</td>
+<td><strong>MINISTÉRIO PÚBLICO FEDERAL </strong></td>
+</tr>
+<tr>
+<td>PROC.(A/S)(ES)</td>
+<td><strong>PROCURADOR-GERAL DA REPÚBLICA </strong></td>
+</tr>
+<tr>
+<td>INVEST.(A/S)</td>
+<td><strong>E C C </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>ANTONIO FERNANDO BARROS E SILVA DE SOUZA E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+<td>INVEST.(A/S)</td>
+<td><strong>S P DE A </strong></td>
+</tr>
+<tr>
+<td>ADV.(A/S)</td>
+<td><strong>CLAUDIO ORAINDI RODRIGUES NETO E OUTRO(A/S)</strong></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td>Processo(s) apensado(s):</td>
+<td><a href="./verProcessoAndamento.asp?incidente=4767321"><strong>AC 3865</strong></a> </td>
+</tr>
+</table>
+</div>
+<div class="abasAcompanhamento">
+<ul class="abas">
+<li><a href="#" class="ativo">Andamentos</a></li>
+<li><a href="../diarioJustica/listarDiarioJustica.asp?tipoPesquisaDJ=AP&amp;numero=3983&amp;classe=Inq">
+                            DJ/DJe</a></li>
+<li><a href="../jurisprudencia/listarConsolidada.asp?classe=Inq&amp;numero=3983&amp;origem=AP">
+                            Jurisprudência</a></li>
+<li><a href="verProcessoDeslocamento.asp?incidente=4727441">
+                            Deslocamentos</a></li>
+<li><a href="verProcessoDetalhe.asp?incidente=4727441">
+                            Detalhes</a></li>
+<li><a href="verProcessoPeticao.asp?incidente=4727441">
+                            Petições</a></li>
+<li class="ultima"><a href="verProcessoRecurso.asp?incidente=4727441">
+                            Recursos</a></li>
+</ul>
+<table class="resultadoAndamentoProcesso">
+<caption class="hide">
+                                Resultados da busca
+                                </caption>
+<tr>
+<th scope="col" width="70" align="center">Data</th>
+<th scope="col" align="center">Andamento</th>
+<th scope="col" width="64" align="center">Órgão Julgador</th>
+<th scope="col" align="center">Observação</th>
+<th scope="col" width="80" align="center">Documento</th>
+</tr>
+<tr>
+<td><span>21/12/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>APENSAMENTO DE DOCUMENTOS</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/12/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 66640/2015.66640/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/12/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/12/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/12/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/12/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/12/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/12/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 66411/2015.66411/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/12/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/12/2015</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>MANDADO DE INTIMAÇÃO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/12/2015</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>***devidamente cumprido</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/12/2015</span> </td>
+<td><span>Expedido(a)</span> </td>
+<td><span></span> </td>
+<td><span>MANDADO DE INTIMAÇÃO DESPACHO-DECISÃO PARTE - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/12/2015</span> </td>
+<td><span>Comunicação assinada</span> </td>
+<td><span></span> </td>
+<td><span>MANDADO DE INTIMAÇÃO DESPACHO-DECISÃO PARTE - SEJ</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/12/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de 1 mandado de intimação. Decisão de 25/11/15.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/12/2015</span> </td>
+<td><span>Juntada de AR</span> </td>
+<td><span></span> </td>
+<td><span>da Carta de Ordem 1112015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/11/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/11/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>SOMENTE OS VLS 9, 10 E 11</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/11/2015</span> </td>
+<td><span>Interposto agravo regimental</span> </td>
+<td><span></span> </td>
+<td><span>Juntada Petição: 60889/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/11/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/11/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/11/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 59985/2015.59985/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/11/2015</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>MANDADO DE NOTIFICAÇÃO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/11/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>18/11/2015</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/11/2015</span> </td>
+<td><span>Expedido(a)</span> </td>
+<td><span></span> </td>
+<td><span>Carta de Ordem Geral</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/11/2015</span> </td>
+<td><span>Expedido(a)</span> </td>
+<td><span></span> </td>
+<td><span>MANDADO DE NOTIFICAÇÃO - RELATOR</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/11/2015</span> </td>
+<td><span>Comunicação assinada</span> </td>
+<td><span></span> </td>
+<td><span>MANDADO DE NOTIFICAÇÃO - RELATOR</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/11/2015</span> </td>
+<td><span>Comunicação assinada</span> </td>
+<td><span></span> </td>
+<td><span>Carta de Ordem Geral</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/11/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Cumprimento da Decisão de 27/10/2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/10/2015</span> </td>
+<td><span>Decisão (segredo de justiça)</span> </td>
+<td><span>MIN. TEORI ZAVASCKI</span> </td>
+<td><span>em 27.10.15</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/10/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 214, divulgado em 26/10/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=308008352&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/10/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>somente os volumes nove e dez</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/10/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de cumprimento do Despacho</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 31748/2015.31748/2015, em 20/08/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/10/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 22.10.2015: "Diante da documentação juntada, observe-se, até nova
+decisão, a restrição de publicidade decorrente da juntada, no aditamento
+à denúncia ora formulada, de depoimentos que seguem sob sigilo legal,
+observado o § 2º do art. 7º da Lei 12.850/2013 e a Súmula Vinculante 14.
+Publique-se. Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/10/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>com volumes 9 e 10, apensos 4, 5 e 6.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/10/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de apensamento. (apenso 6)</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 54268/2015.54268/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/10/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span>DJE nº 208, divulgado em 16/10/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=307947045&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 52974/2015.52974/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 52857/2015.52857/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de apensamento de documentação sigilosa. Apenso 5.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 52856/2015.52856/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Cumprimento de despacho.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/10/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 14.10.2015: "Dê-se vista dos requerimentos formulados pelo
+investigado (petições 49724/2015 e 52475/2015) ao Ministério Público,
+assegurado desde logo ao defensor legalmente constituído o acesso à
+documentação sigilosa materializada no apenso 4 destes autos, nos
+termos do enunciado sumular vinculante 14.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/10/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 52475/2015.52475/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/10/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 50424/2015.50424/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 50231/2015.50231/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/10/2015</span> </td>
+<td><span>Interposto agravo regimental</span> </td>
+<td><span></span> </td>
+<td><span>Juntada Petição: 49724/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/10/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de apensamento de documentação sigilosa. Apenso 4.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/10/2015</span> </td>
+<td><span>Expedido(a)</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO - COMUNICAÇÃO DESPACHO DECISÃO - RELATOR</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/10/2015</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>AO GABINETE DO MINISTRO LUIZ FUX</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/10/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 51391/2015.51391/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/10/2015</span> </td>
+<td><span>Comunicação assinada</span> </td>
+<td><span></span> </td>
+<td><span>OFÍCIO - COMUNICAÇÃO DESPACHO DECISÃO - RELATOR</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/10/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de 1 ofício. Despacho de 1.10.2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/10/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 200, divulgado em 05/10/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=307867573&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/10/2015</span> </td>
+<td><span>Deferido</span> </td>
+<td><span>MIN. TEORI ZAVASCKI</span> </td>
+<td><span>Referente ao protocolado nº 50424/2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/10/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 1º.10.2015: "Oportunamente, junte-se a petição 50231/2015."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/10/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 1º.10.2015: "Defiro a solicitação materializada no ofício 24201/2015,
+autorizando a Procuradoria-Geral da República a providenciar cópia da
+documentação requerida.
+Oportunamente, junte-se o mencionando ofício.
+Oficie-se.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/10/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/09/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CUMPRIMENTO DE DESPACHO - PET 5671</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>28/09/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 193, divulgado em 25/09/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=307808455&amp;tipoApp=.pdf"><span>Decisão monocrática</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/09/2015</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>Ao Gab. do Exmo. Sr. Min. Luiz Fux (somente o volume 9).</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/09/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 47259/2015.47259/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/09/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 46353/2015.46353/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/09/2015</span> </td>
+<td><span>Deferido em parte</span> </td>
+<td><span>MIN. TEORI ZAVASCKI</span> </td>
+<td><span>Em 23.9.2015, ref. às petições 43096/2015, 46353/2015 e 47259/2015: "...defiro em parte o pedido, para fixar como termo
+inicial do prazo (em dobro) de apresentação da resposta à denúncia (art.
+4º da Lei 8.038/1990), a data de publicação da presente decisão.
+Oportunamente, juntem-se as Petições 46353/2015 e 47259/2015.
+Publique-se. Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/09/2015</span> </td>
+<td><span>Juntada de AR</span> </td>
+<td><span></span> </td>
+<td><span>referente ao ofício nº 3405/2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de retificação da autuação</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/09/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 46498/2015.46498/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/09/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/09/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>14/09/2015</span> </td>
+<td><span>Ata de Julgamento Publicada, DJE</span> </td>
+<td><span></span> </td>
+<td><span>ATA Nº 27, de 03/09/2015.  DJE nº 181, divulgado em 11/09/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/09/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/09/2015</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>da certidão de julgamento referente à sessão do Plenário de 03.09.2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/09/2015</span> </td>
+<td><span>Substituição do Relator, art. 38, II, do RISTF</span> </td>
+<td><span></span> </td>
+<td><span>MIN. LUIZ FUX</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/09/2015</span> </td>
+<td><span>Questão de ordem</span> </td>
+<td><span>TRIBUNAL PLENO</span> </td>
+<td><span>Decisão: O Tribunal, por maioria, resolveu a questão de ordem no sentido de ser cabível a aplicação analógica do art. 191, do Código de Processo Civil, ao prazo previsto no art. 4º, caput, da Lei nº 8.038/1990, deferindo, em consequência, quanto ao ponto, o pedido formulado pelo denunciado de duplicação do prazo, vencidos os Ministros Teori Zavascki (Relator), Edson Fachin, Roberto Barroso e Rosa Weber. Redigirá o acórdão o Ministro Luiz Fux. Ausente o Ministro Dias Toffoli, participando, na qualidade de Presidente do Tribunal Superior Eleitoral, da Conferência Global sobre Dinheiro e Política, promovida pelo Tribunal Eleitoral do México e pelo Instituto Internacional para a Democracia e a Assistência Eleitoral (IDEA Internacional). Presidiu o julgamento o Ministro Ricardo Lewandowski. Plenário, 03.09.2015.</span> 
+                                        </td>
+<td>
+                                             <br><a href="verProcessoTexto.asp?id=3892390&amp;tipoApp=RTF"><span>Decisão de Julgamento</span></a><br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/09/2015</span> </td>
+<td><span>Apresentado em mesa para julgamento</span> </td>
+<td><span></span> </td>
+<td><span>Pleno em 03/09/2015 12:46:50 - Inq-QO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/09/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/09/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 43932/2015.43932/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>02/09/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/09/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/09/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/09/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 43204/2015.43204/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/08/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>Com 9 volumes e 3 apensos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 43096/2015.43096/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 41846/2015.41846/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>27/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 37497/2015.37497/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/08/2015</span> </td>
+<td><span>Juntada do mandado cumprido</span> </td>
+<td><span></span> </td>
+<td><span>DE NOTIFICAÇÃO DESTINADO AO SR.EDUARDO CONSENTINO DA CUNHA, CIENTE EM 26/08/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>26/08/2015</span> </td>
+<td><span>Devolução de mandado</span> </td>
+<td><span></span> </td>
+<td><span>(Em 26/08/2015 ) Da Sua Excelência o Senhor Edurado Consentino da Cunha , Deputado Federal</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/08/2015</span> </td>
+<td><span>Expedido Ofício nº</span> </td>
+<td><span></span> </td>
+<td><span>3405, ao Juiz-Diretor da Comarca de Rio Bonito/RJ, JS106921098BR
+</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/08/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 166, divulgado em 24/08/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=307540691&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 41279/2015.41279/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>21/08/2015</span> </td>
+<td><span>Determinada a notificação</span> </td>
+<td><span></span> </td>
+<td><span>Em 20/8/2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>COM 9 VOLUMES</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de retificação da autuação para incluir como investigada a Sra. Solange Pereira de Almeida.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Oferecida a denúncia</span> </td>
+<td><span></span> </td>
+<td><span>Protocolado nº 40944/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 40943/2015.40943/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de apensamento da AC 3865 a estes autos.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 32802/2015.32802/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 25712/2015.25712/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 23415/2015.23415/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 22899/2015.22899/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 21769/2015.21769/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 21654/2015.21654/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>de apensamento.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Recebimento externo dos autos</span> </td>
+<td><span></span> </td>
+<td><span>CORREGEDORIA GERAL DO DEPARTAMENTO DE POLÍCIA FEDERAL - Guia 1397584/1397584</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Lançamento indevido</span> </td>
+<td><span></span> </td>
+<td><span>20/08/2015 - Petição
+Justificativa: Lançamento indevido.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span class="andamentoIndevido">20/08/2015</span> </td>
+<td><span class="andamentoIndevido">Petição</span> </td>
+<td><span class="andamentoIndevido"></span> </td>
+<td><span class="andamentoIndevido"></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/08/2015</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>Do original da petição nº 37497/2015 e do despacho proferido em 12/08/2015 à Procuradoria-Geral da República.  </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/08/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 12/08/2015 (petição 37497/2015): "(...)Dê-se vista da mencionada petição ao Exmo. Sr. Procurador-geral da República(...)"</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/08/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>PETIÇÃO ELETRÔNICA ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/08/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/08/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 151, divulgado em 31/07/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=307137823&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>10/07/2015</span> </td>
+<td><span>Expedido Ofício nº</span> </td>
+<td><span></span> </td>
+<td><span>2596, ao Sr, Sérgio Eduardo Busato, Delegado Polícia Federal.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/06/2015</span> </td>
+<td><span>Ciência</span> </td>
+<td><span></span> </td>
+<td><span>DO DESPACHO PROFERIDO EM 29/06/2015, PELA ADV. GIOVANNA BAKAJ REZENDE OLIVEIRA. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/06/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 29.6.2015: "Defiro a prorrogação de prazo para conclusão das
+diligências restantes solicitadas pela autoridade policial (petição
+31748/2015) e ratificada pelo Procurador-Geral da República (petição
+32802/2015), até 31.8.2015, a teor do art. 230-C, caput, e § 1º, do RISTF.
+Oportunamente, juntem-se as petições e 31748/2015 e 32802/2015.
+Oficie-se.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>29/06/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/06/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>03/06/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 105, divulgado em 02/06/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=306964458&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>01/06/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 1º.6.2015: "...indefiro os requerimentos formulados pelo
+investigado.
+Oportunamente, junte-se a petição 25712/2015.
+Publique-se. Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/05/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>25/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/05/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 14.5.2015: "Oportunamente, junte-se a petição 23415/2015."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/05/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/05/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 88, divulgado em 12/05/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15338422494&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>13/05/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 88, divulgado em 12/05/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15338422495&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/05/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 12.5.2015: "Oportunamente, junte-se a petição 22899/2015."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/05/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>11/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/05/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 7.5.2015, ref. a Petição 21654/2015: "...poderá a defesa do investigado ter livre acesso aos
+autos a que alude.
+Publique-se. Intimem-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/05/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 7.5.2015, ref. a Petição 21769/2015: "...poderá o investigado solicitar diretamente à Seção
+de Processos Originários Criminais deste Tribunal que seja
+disponibilizada cópia integral dos presentes autos, assim como das
+mídias digitais existentes nos autos de Pet 5.209, 5.210, 5.244 e 5.245.
+Publique-se. Intimem-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>07/05/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 84, divulgado em 06/05/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15336178111&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/05/2015</span> </td>
+<td><span>Baixa dos autos em diligência, Guia nº</span> </td>
+<td><span></span> </td>
+<td><span>21764/2015 - CORREGEDORIA GERAL DO DEPARTAMENTO DE POLÍCIA FEDERAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/05/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/05/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>06/05/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/05/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico que, em cumprimento ao despacho a fls. 339-341, a cópia reprográfica dos autos foi reautuada como Petição 5.608. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/05/2015</span> </td>
+<td><span>Ciência</span> </td>
+<td><span></span> </td>
+<td><span>DO DESPACHO PROFERIDO EM 04 DE MAIO DE 2015, PELO ADVOGADO ALEXANDRE JOSÉ GARCIA DE SOUZA</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>05/05/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 4.5.2015: "...defiro a prorrogação de prazo para a conclusão do
+inquérito até 29.6.2015, a teor do art. 230-C, caput, do RISTF.
+Reautue-se cópia do presente inquérito, para fins de análise da
+petição 11907/2015 (fls. 243-258) e das contrarrazões apresentadas pela
+Procuradoria-Geral da República (fls. 320-337), em procedimento
+autônomo, depois do que voltem conclusos para julgamento.
+Publique-se.
+Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/05/2015</span> </td>
+<td><span>Conclusos ao(à) Relator(a)</span> </td>
+<td><span></span> </td>
+<td><span>com 2 volumes</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>04/05/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 20859/2015.20859/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/04/2015</span> </td>
+<td><span>Recebimento dos autos</span> </td>
+<td><span></span> </td>
+<td><span>PROCURADORIA GERAL DA REPUBLICA - Guia 1356659/1356659</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/04/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>24/04/2015</span> </td>
+<td><span>Vista à PGR</span> </td>
+<td><span></span> </td>
+<td><span>DESPACHO A FLS.  290</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>ALTERAÇÃO DA AUTUAÇÃO</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2015</span> </td>
+<td><span>Juntada</span> </td>
+<td><span></span> </td>
+<td><span>petição 12.776/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 17546/2015.17546/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 17417/2015.17417/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2015</span> </td>
+<td><span>Juntada a petição nº</span> </td>
+<td><span></span> </td>
+<td><span> 14271/2015.14271/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2015</span> </td>
+<td><span>Interposto agravo regimental</span> </td>
+<td><span></span> </td>
+<td><span>Juntada Petição: 11907/2015</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/04/2015</span> </td>
+<td><span>Recebimento externo dos autos</span> </td>
+<td><span></span> </td>
+<td><span>CORREGEDORIA GERAL DO DEPARTAMENTO DE POLÍCIA FEDERAL - Guia 1353327/1353327</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>22/04/2015</span> </td>
+<td><span>Expedido Ofício nº</span> </td>
+<td><span></span> </td>
+<td><span>1040/R, ao Corregedor-Geral do Departamento de Polícia Federal.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>20/04/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 73, divulgado em 17/04/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15330243607&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/04/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 72, divulgado em 16/04/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15330105257&amp;tipoApp=.pdf"><span>Decisão monocrática</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/04/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico que, em cumprimento ao despacho de 15/04/2015, elaborei um ofício. </span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>16/04/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>em 15/04/15: "...indefiro por ora a prorrogação de prazo solicitada na petição nº 17546/2015 e determino a imediata devolução dos autos..."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico que, nesta data, o Dr. Eduardo Botão Pelella, Procurador Regional da República, comparaceu ao gabinete do Ministro Relator, onde tomou ciência dos despachos e decisões proferidos nestes autos até a presente data.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 15.4.2015: "...remetam-se os autos ao Ministério
+Público conforme despacho proferido em 18.3.2015.
+Publique-se.
+Oficie-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Expedido telex/fax nº</span> </td>
+<td><span></span> </td>
+<td><span>Fax em 15/4/2015, ao Diretor-Geral do Departamento de Polícia Federal</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>Certifico a elaboração de 1 fax. Despacho 15.4.2015.</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>15/04/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 15.4.2015 (petição 17417/2015): "[...] A exposição do titular da ação penal dá conta de se ter
+estabelecido a necessidade de oficiar à autoridade policial com cópia
+desta decisão, no sentido de atender à suspensão requerida pelo
+Procurador-Geral da República.
+Cumpra-se.
+Publique-se. Intime-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>08/04/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 65, divulgado em 07/04/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15325565529&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>31/03/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 31.3.2015: "...aguarde-se o cumprimento do prazo estipulado no
+ato de instauração do inquérito e remetam-se os autos ao Ministério
+Público.
+Publique-se. Intimem-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/03/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>30/03/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/03/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/03/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>23/03/2015</span> </td>
+<td><span>Publicação, DJE</span> </td>
+<td><span></span> </td>
+<td><span> DJE nº 56, divulgado em 20/03/2015</span> 
+                                        </td>
+<td><a href="verProcessoPeca.asp?id=15321259141&amp;tipoApp=.pdf"><span>Despacho</span></a><br>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>19/03/2015</span> </td>
+<td><span>Despacho</span> </td>
+<td><span></span> </td>
+<td><span>Em 18.3.2015: "Tendo em vista que os autos se encontram baixados à
+autoridade policial, junte-se oportunamente a Petição 11907/2015 e
+remetam-se os autos Ministério Público.
+Publique-se. Intimem-se."</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/03/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>CERTIDÃO - PETIÇÃO ELETRÔNICA - ASSINATURA DIGITAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>17/03/2015</span> </td>
+<td><span>Petição</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/03/2015</span> </td>
+<td><span>Baixa dos autos em diligência, Guia nº</span> </td>
+<td><span></span> </td>
+<td><span>9986/2015 - CORREGEDORIA GERAL DO DEPARTAMENTO DE POLÍCIA FEDERAL</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>12/03/2015</span> </td>
+<td><span>Remessa</span> </td>
+<td><span></span> </td>
+<td><span>dos autos à Seção de Baixa e Expedição, para encaminhamento à Polícia Federal</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/03/2015</span> </td>
+<td><span>Certidão</span> </td>
+<td><span></span> </td>
+<td><span>cumprimento de despacho</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/03/2015</span> </td>
+<td><span>Distribuído por prevenção</span> </td>
+<td><span></span> </td>
+<td><span>MIN. TEORI ZAVASCKI</span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+<tr>
+<td><span>09/03/2015</span> </td>
+<td><span>Autuado</span> </td>
+<td><span></span> </td>
+<td><span></span> 
+                                        </td>
+<td>
+                                             <br>
+                                             <br></td>
+</tr>
+</table>
+</div>
+</div><!-- 4727441 --><div id='chamaVerImpressao' style='visibility:hidden;'></div>
+				</div>
+			</div> 
+			
+			<div style="font-size: 6px;">&nbsp;</div>
+			
+      	<div id="rodape" style="padding-top: 5px; border-top: solid 1px silver;">
+      
+				Pra&ccedil;a dos Tr&ecirc;s Poderes - Bras&iacute;lia - DF - CEP 70175-900 Telefone: 55.61.3217.3000 | 
+					<a href="../cms/verTexto.asp?servico=sobreStfConhecaStfTelefoneUtil">Telefones &Uacute;teis</a> | 
+					<a href="/portal/push/">STF Push</a> | 
+					<a href="../RSS/" class="rss">Canais RSS</a>
+			</div>
+	
+		</div>
+
+
+
+	</div> 
+	
+	<iframe title="Quadro de auto ajuda" id="sysQuadroAutoAjuda" style="display: none; position: absolute; border: 0px; z-index: 98;"></iframe>
+    <noframes> Seu navegador n&atilde;o suporta frames. </noframes>
+	
+	<script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-9066701-4");
+        pageTracker._trackPageview();
+      } catch(err) {}
+    </script>   
+   
+
+</body>
+
+</html>
