@@ -2,6 +2,27 @@
 #'
 #' @export
 download_stf <- function(n_processos, path) {
+  download_stf_um <- function(p, path) {
+    u_base <- 'http://www.stf.jus.br/portal/processo'
+    u <- sprintf('%s/listarProcessoUnico.asp', u_base)
+    p <- gsub('[^0-9]', '', p)
+    dat <- list('dropmsgoption'='5', 'partesAdvogadosRadio'='1', 'numero'=p)
+    link <- httr::POST(u, body = dat, encode = 'form') %>%
+      httr::content('text') %>%
+      xml2::read_html() %>%
+      rvest::html_nodes('.resultadoLista') %>%
+      dplyr::first() %>%
+      rvest::html_nodes('a') %>%
+      dplyr::first() %>%
+      rvest::html_attr('href') %>%
+      stringr::str_trim()
+    u_processo <- sprintf('%s/%s', u_base, link)
+    r <- httr::GET(u_processo)
+    arq <- sprintf('%s/%s.html', path, p)
+    cat(httr::content(r, 'text'), file = arq)
+    return('OK')
+  }
+
   f <- dplyr::failwith('Erro na busca', download_stf_um, quiet = TRUE)
   d <- dplyr::data_frame(n_processo = n_processos) %>%
     dplyr::distinct(n_processo) %>%
@@ -9,27 +30,6 @@ download_stf <- function(n_processos, path) {
     dplyr::do(result = f(p = .$n_processo, path = path)) %>%
     tidyr::unnest(result)
   d
-}
-
-download_stf_um <- function(p, path) {
-  u_base <- 'http://www.stf.jus.br/portal/processo'
-  u <- sprintf('%s/listarProcessoUnico.asp', u_base)
-  p <- gsub('[^0-9]', '', p)
-  dat <- list('dropmsgoption'='5', 'partesAdvogadosRadio'='1', 'numero'=p)
-  link <- httr::POST(u, body = dat, encode = 'form') %>%
-    httr::content('text') %>%
-    xml2::read_html() %>%
-    rvest::html_nodes('.resultadoLista') %>%
-    dplyr::first() %>%
-    rvest::html_nodes('a') %>%
-    dplyr::first() %>%
-    rvest::html_attr('href') %>%
-    stringr::str_trim()
-  u_processo <- sprintf('%s/%s', u_base, link)
-  r <- httr::GET(u_processo)
-  arq <- sprintf('%s/%s.html', path, p)
-  cat(httr::content(r, 'text'), file = arq)
-  return('OK')
 }
 
 buscar_abas <- function(r) {
@@ -54,6 +54,18 @@ buscar_abas <- function(r) {
 #'
 #' @export
 parse_stf <- function(arqs) {
+  parse_stf_um <- function(a) {
+    trim <- stringr::str_trim
+    tab <- a %>%
+      xml2::read_html(encoding = 'UTF-8') %>%
+      rvest::html_nodes('.resultadoAndamentoProcesso') %>%
+      dplyr::first() %>%
+      rvest::html_table() %>%
+      dplyr::tbl_df() %>%
+      arrumar_nomes() %>%
+      dplyr::mutate_each(dplyr::funs(trim))
+    tab
+  }
   d_erro <- dplyr::data_frame('Erro no parse')
   f <- dplyr::failwith(d_erro, parse_stf_um, quiet = TRUE)
   d <- dplyr::data_frame(arq = arqs) %>%
@@ -64,19 +76,6 @@ parse_stf <- function(arqs) {
     dplyr::ungroup() %>%
     dplyr::select(-arq)
   d
-}
-
-parse_stf_um <- function(a) {
-  trim <- stringr::str_trim
-  tab <- a %>%
-    xml2::read_html(encoding = 'UTF-8') %>%
-    rvest::html_nodes('.resultadoAndamentoProcesso') %>%
-    dplyr::first() %>%
-    rvest::html_table() %>%
-    dplyr::tbl_df() %>%
-    arrumar_nomes() %>%
-    dplyr::mutate_each(dplyr::funs(trim))
-  tab
 }
 
 #' Pega andamentos do STF
