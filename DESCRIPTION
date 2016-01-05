@@ -12,3 +12,6 @@ Imports: rvest,
     stringr,
     magrittr,
     tidyr
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
